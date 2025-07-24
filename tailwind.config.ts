@@ -13,6 +13,10 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        sans: ['Inter', 'system-ui', 'sans-serif'],
+        'automate': ['Automate OT', 'system-ui', 'sans-serif'],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -56,6 +60,13 @@ export default {
           "accent-foreground": "hsl(var(--sidebar-accent-foreground))",
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
+        },
+        wastex: {
+          primary: "hsl(var(--wastex-primary))",
+          secondary: "hsl(var(--wastex-secondary))",
+          surface: "hsl(var(--wastex-surface))",
+          text: "hsl(var(--wastex-text))",
+          border: "hsl(var(--wastex-border))",
         },
       },
       borderRadius: {
