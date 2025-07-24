@@ -32,17 +32,17 @@ export default function Index() {
             </div>
 
             {/* Main Headline */}
-            <h1 className="text-wastex-hero-text text-4xl md:text-5xl lg:text-6xl font-bold leading-tight md:leading-[80px] tracking-wider font-automate max-w-[844px]">
+            <h1 className="text-wastex-hero-text text-4xl sm:text-5xl md:text-6xl xl:text-7xl font-bold leading-tight sm:leading-[60px] md:leading-[80px] tracking-wider max-w-[844px]">
               Connecting waste producers and buyers.
             </h1>
 
             {/* Subtext */}
-            <p className="text-wastex-hero-text text-xl md:text-3xl font-medium tracking-wider leading-8">
+            <p className="text-wastex-hero-text text-lg sm:text-xl md:text-2xl lg:text-3xl font-medium tracking-wider leading-relaxed">
               Join WasteX for FREE—your first job is on us!
             </p>
 
             {/* CTA Button */}
-            <button className="bg-wastex-primary text-wastex-text px-8 py-4 rounded-full text-lg md:text-2xl font-bold tracking-wider hover:bg-wastex-primary/90 transition-colors font-automate">
+            <button className="bg-wastex-primary text-wastex-text px-6 sm:px-8 py-3 sm:py-4 rounded-full text-lg sm:text-xl md:text-2xl font-bold tracking-wider hover:bg-wastex-primary/90 transition-colors shadow-lg">
               Get started
             </button>
           </div>
