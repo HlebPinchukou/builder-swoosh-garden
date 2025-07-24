@@ -45,6 +45,8 @@
     --wastex-surface: 0 0% 96.1%; /* #F5F5F5 */
     --wastex-text: 0 0% 14.9%; /* #262626 */
     --wastex-border: 214.3 31.8% 91.4%;
+    --wastex-hero-overlay: 142 50% 18%; /* #183922 - Dark green overlay */
+    --wastex-hero-text: 0 0% 96.1%; /* #F5F5F5 - Light text on dark background */
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
