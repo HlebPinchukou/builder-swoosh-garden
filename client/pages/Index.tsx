@@ -82,7 +82,7 @@ export default function Index() {
             <div className="flex flex-col gap-6">
               {/* Step 1 */}
               <div className="flex items-center gap-3">
-                <div className="flex w-8 h-8 items-center justify-center rounded-full bg-green-200">
+                <div className="flex w-8 h-8 items-center justify-center rounded-full bg-wastex-icon-bg">
                   <svg className="w-6 h-6" viewBox="0 0 25 25" fill="none">
                     <path d="M20.5 21.7C20.5 20.3044 20.5 19.6066 20.3278 19.0388C19.94 17.7604 18.9395 16.76 17.6611 16.3722C17.0933 16.1999 16.3956 16.1999 15 16.1999H10C8.60444 16.1999 7.90665 16.1999 7.33886 16.3722C6.06045 16.76 5.06004 17.7604 4.67224 19.0388C4.5 19.6066 4.5 20.3044 4.5 21.7M17 8.19995C17 10.6852 14.9853 12.7 12.5 12.7C10.0147 12.7 8 10.6852 8 8.19995C8 5.71467 10.0147 3.69995 12.5 3.69995C14.9853 3.69995 17 5.71467 17 8.19995Z" stroke="#0F2415" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                   </svg>
