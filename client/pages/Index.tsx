@@ -47,8 +47,9 @@ export default function Index() {
         </section>
 
         {/* Welcome Section */}
-        <section className="flex flex-col justify-center items-center gap-12 lg:gap-20 py-16 lg:py-24 px-4 md:px-16 lg:px-20">
-          <div className="flex flex-col justify-center items-center gap-6 max-w-4xl text-center">
+        <section className="relative">
+          {/* Text Content */}
+          <div className="flex flex-col justify-center items-center gap-6 max-w-4xl text-center py-16 lg:py-24 px-4 md:px-16 lg:px-20 mx-auto">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-wastex-text leading-tight tracking-wider">
               Welcome to WasteX
             </h2>
@@ -56,13 +57,16 @@ export default function Index() {
               WasteX helps businesses connect for responsible waste disposal and recycling. Whether you're a company looking to dispose of waste or one looking to collect and repurpose it, we make the process seamless and efficient.
             </p>
           </div>
-          <div className="w-full max-w-7xl">
-            <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/ed360c2001bd10617c4ce9d7a181863284241844?width=2880"
-              alt="WasteX application interface demonstration"
-              className="w-full h-auto rounded-lg shadow-lg"
-            />
-          </div>
+
+          {/* Full-width Background Image */}
+          <div
+            className="w-full h-[400px] md:h-[500px] lg:h-[600px] bg-cover bg-center bg-no-repeat"
+            style={{
+              backgroundImage: 'url(https://api.builder.io/api/v1/image/assets/TEMP/ed360c2001bd10617c4ce9d7a181863284241844?width=2880)'
+            }}
+            role="img"
+            aria-label="WasteX application interface demonstration"
+          />
         </section>
 
         {/* Features Section */}
