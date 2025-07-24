@@ -60,7 +60,7 @@ export default function Index() {
 
           {/* Full-width Background Image */}
           <div
-            className="w-full h-[400px] md:h-[500px] lg:h-[600px] bg-cover bg-center bg-no-repeat"
+            className="w-full h-[400px] md:h-[500px] lg:h-[600px] bg-cover bg-center bg-no-repeat rounded-b-3xl"
             style={{
               backgroundImage: 'url(https://api.builder.io/api/v1/image/assets/TEMP/ed360c2001bd10617c4ce9d7a181863284241844?width=2880)'
             }}
