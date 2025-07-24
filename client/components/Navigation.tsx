@@ -16,7 +16,7 @@ const Navigation = () => {
   };
 
   return (
-    <nav className="w-full border-b border-wastex-border bg-wastex-surface">
+    <nav className="w-full border-b border-wastex-border bg-white">
       <div className="mx-auto px-16 lg:px-16 md:px-8 sm:px-4">
         <div className="flex items-center justify-between h-20">
           {/* Left Side - Logo and Navigation Links */}
