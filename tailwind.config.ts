@@ -67,6 +67,8 @@ export default {
           surface: "hsl(var(--wastex-surface))",
           text: "hsl(var(--wastex-text))",
           border: "hsl(var(--wastex-border))",
+          "hero-overlay": "hsl(var(--wastex-hero-overlay))",
+          "hero-text": "hsl(var(--wastex-hero-text))",
         },
       },
       borderRadius: {
