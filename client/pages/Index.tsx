@@ -1,5 +1,7 @@
 import Navigation from "@/components/Navigation";
 import { Link } from "react-router-dom";
+import Footer from "@/components/Footer";
+import FaqAccordion from "@/components/FaqAccordion";
 
 export default function Index() {
   return (
@@ -7,18 +9,16 @@ export default function Index() {
       <Navigation />
       <div className="min-h-screen">
         {/* Hero Section */}
-        <section className="relative h-[612px] w-full overflow-hidden">
+        <section className="relative w-full">
           {/* Background Image */}
-          <div className="absolute inset-0">
-            <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/ad5ee4a48e9eab4b4a064640b9ac6fa99f8160f7?width=2880"
-              alt="WasteX team member in uniform"
-              className="w-full h-full object-cover"
-            />
-          </div>
+          <img
+            src="https://api.builder.io/api/v1/image/assets/TEMP/ad5ee4a48e9eab4b4a064640b9ac6fa99f8160f7?width=2880"
+            alt="WasteX team member in uniform"
+            className="w-full h-auto rounded-b-3xl"
+          />
 
           {/* Content */}
-          <div className="relative z-10 flex flex-col items-start gap-8 sm:gap-12 px-4 sm:px-8 md:px-16 lg:px-20 pt-16 sm:pt-20 max-w-5xl h-full">
+          <div className="absolute inset-0 z-10 flex flex-col items-start gap-8 sm:gap-12 px-4 sm:px-8 md:px-16 lg:px-20 pt-16 sm:pt-20 max-w-5xl">
             {/* Location Section */}
             <div className="flex items-start gap-2 sm:gap-3">
               <svg className="w-6 h-6 sm:w-8 sm:h-8 mt-1 flex-shrink-0" viewBox="0 0 32 32" fill="none">
@@ -59,13 +59,10 @@ export default function Index() {
           </div>
 
           {/* Full-width Background Image */}
-          <div
-            className="w-full h-[400px] md:h-[500px] lg:h-[600px] bg-cover bg-center bg-no-repeat rounded-b-3xl"
-            style={{
-              backgroundImage: 'url(https://api.builder.io/api/v1/image/assets/TEMP/ed360c2001bd10617c4ce9d7a181863284241844?width=2880)'
-            }}
-            role="img"
-            aria-label="WasteX application interface demonstration"
+          <img
+            src="https://api.builder.io/api/v1/image/assets/TEMP/ed360c2001bd10617c4ce9d7a181863284241844?width=2880"
+            alt="WasteX application interface demonstration"
+            className="w-full h-auto"
           />
         </section>
 
@@ -209,46 +206,10 @@ export default function Index() {
         </section>
 
         {/* CTA Section */}
-        <section className="py-20 bg-wastex-secondary">
-          <div className="container mx-auto px-4 text-center">
-            <h2 className="text-4xl font-bold text-white mb-6">
-              Ready to Transform Your Waste?
-            </h2>
-            <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
-              Join thousands of companies already using WasteX to turn their waste streams into revenue streams.
-            </p>
-            <button className="px-8 py-4 bg-wastex-primary text-wastex-text font-bold text-lg rounded-full hover:bg-wastex-primary/90 transition-colors tracking-wide">
-              Get Started Today
-            </button>
-          </div>
-        </section>
+        <FaqAccordion />
 
         {/* Footer */}
-        <footer className="py-12 bg-wastex-text">
-          <div className="container mx-auto px-4 text-center">
-            <div className="mb-8">
-              <img
-                src="https://api.builder.io/api/v1/image/assets/TEMP/fca5f3e157cf214b51b8bcc837d1189326250c90?width=306"
-                alt="WasteX Logo"
-                className="h-10 mx-auto filter brightness-0 invert"
-              />
-            </div>
-            <div className="flex flex-wrap justify-center gap-8 mb-8">
-              <Link to="/producer" className="text-white/80 hover:text-white transition-colors">
-                Producer Portal
-              </Link>
-              <Link to="/buyer" className="text-white/80 hover:text-white transition-colors">
-                Buyer Portal
-              </Link>
-              <Link to="/about" className="text-white/80 hover:text-white transition-colors">
-                About Us
-              </Link>
-            </div>
-            <p className="text-white/60">
-              © 2024 WasteX. All rights reserved. Building a sustainable future together.
-            </p>
-          </div>
-        </footer>
+        <Footer />
       </div>
     </>
   );
