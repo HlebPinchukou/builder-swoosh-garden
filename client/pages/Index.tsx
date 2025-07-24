@@ -7,30 +7,44 @@ export default function Index() {
       <Navigation />
       <div className="min-h-screen bg-wastex-surface">
         {/* Hero Section */}
-        <section className="py-20 lg:py-32">
-          <div className="container mx-auto px-4 text-center">
-            <h1 className="text-5xl lg:text-7xl font-bold text-wastex-text mb-6 tracking-tight">
-              Sustainable Waste
-              <br />
-              <span className="text-wastex-secondary">Management</span>
-            </h1>
-            <p className="text-xl lg:text-2xl text-wastex-text/80 mb-8 max-w-3xl mx-auto leading-relaxed">
-              Connect waste producers with buyers in a revolutionary marketplace that transforms waste into valuable resources for a circular economy.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <Link
-                to="/producer"
-                className="px-8 py-4 bg-wastex-primary text-wastex-text font-bold text-lg rounded-full hover:bg-wastex-primary/90 transition-colors tracking-wide"
-              >
-                I'm a Producer
-              </Link>
-              <Link
-                to="/buyer"
-                className="px-8 py-4 border-2 border-wastex-secondary text-wastex-secondary font-bold text-lg rounded-full hover:bg-wastex-secondary hover:text-white transition-colors tracking-wide"
-              >
-                I'm a Buyer
-              </Link>
+        <section className="relative h-[612px] w-full overflow-hidden">
+          {/* Background Image */}
+          <div className="absolute inset-0">
+            <img
+              src="https://api.builder.io/api/v1/image/assets/TEMP/ad5ee4a48e9eab4b4a064640b9ac6fa99f8160f7?width=2880"
+              alt="WasteX team member in uniform"
+              className="w-full h-full object-cover"
+            />
+            {/* Dark overlay */}
+            <div className="absolute inset-0 bg-wastex-hero-overlay/60"></div>
+          </div>
+
+          {/* Content */}
+          <div className="relative z-10 flex flex-col items-start gap-12 px-4 md:px-20 pt-20 max-w-4xl">
+            {/* Location Section */}
+            <div className="flex items-start gap-2">
+              <svg className="w-8 h-8 mt-1 flex-shrink-0" viewBox="0 0 32 32" fill="none">
+                <path d="M16 2C12.13 2 9 5.13 9 9c0 5.25 7 19 7 19s7-13.75 7-19c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" fill="#F5F5F5"/>
+              </svg>
+              <p className="text-wastex-hero-text text-lg md:text-2xl font-medium uppercase tracking-wider leading-8">
+                Trinidad & Tobago waste Removal and Disposal
+              </p>
             </div>
+
+            {/* Main Headline */}
+            <h1 className="text-wastex-hero-text text-4xl md:text-5xl lg:text-6xl font-bold leading-tight md:leading-[80px] tracking-wider font-automate max-w-[844px]">
+              Connecting waste producers and buyers.
+            </h1>
+
+            {/* Subtext */}
+            <p className="text-wastex-hero-text text-xl md:text-3xl font-medium tracking-wider leading-8">
+              Join WasteX for FREE—your first job is on us!
+            </p>
+
+            {/* CTA Button */}
+            <button className="bg-wastex-primary text-wastex-text px-8 py-4 rounded-full text-lg md:text-2xl font-bold tracking-wider hover:bg-wastex-primary/90 transition-colors font-automate">
+              Get started
+            </button>
           </div>
         </section>
 
