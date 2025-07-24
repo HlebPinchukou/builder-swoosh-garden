@@ -5,7 +5,7 @@ export default function Index() {
   return (
     <>
       <Navigation />
-      <div className="min-h-screen bg-wastex-surface">
+      <div className="min-h-screen">
         {/* Hero Section */}
         <section className="relative h-[612px] w-full overflow-hidden">
           {/* Background Image */}
