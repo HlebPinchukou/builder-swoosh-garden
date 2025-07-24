@@ -15,8 +15,8 @@ export default function Index() {
               alt="WasteX team member in uniform"
               className="w-full h-full object-cover"
             />
-            {/* Dark overlay */}
-            <div className="absolute inset-0 bg-wastex-hero-overlay/60"></div>
+            {/* Light overlay for text readability */}
+            <div className="absolute inset-0 bg-black/20"></div>
           </div>
 
           {/* Content */}
