@@ -20,13 +20,13 @@ export default function Index() {
           </div>
 
           {/* Content */}
-          <div className="relative z-10 flex flex-col items-start gap-12 px-4 md:px-20 pt-20 max-w-4xl">
+          <div className="relative z-10 flex flex-col items-start gap-8 sm:gap-12 px-4 sm:px-8 md:px-16 lg:px-20 pt-16 sm:pt-20 max-w-5xl h-full">
             {/* Location Section */}
-            <div className="flex items-start gap-2">
-              <svg className="w-8 h-8 mt-1 flex-shrink-0" viewBox="0 0 32 32" fill="none">
+            <div className="flex items-start gap-2 sm:gap-3">
+              <svg className="w-6 h-6 sm:w-8 sm:h-8 mt-1 flex-shrink-0" viewBox="0 0 32 32" fill="none">
                 <path d="M16 2C12.13 2 9 5.13 9 9c0 5.25 7 19 7 19s7-13.75 7-19c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" fill="#F5F5F5"/>
               </svg>
-              <p className="text-wastex-hero-text text-lg md:text-2xl font-medium uppercase tracking-wider leading-8">
+              <p className="text-wastex-hero-text text-sm sm:text-lg md:text-xl lg:text-2xl font-medium uppercase tracking-wider leading-6 sm:leading-8">
                 Trinidad & Tobago waste Removal and Disposal
               </p>
             </div>
