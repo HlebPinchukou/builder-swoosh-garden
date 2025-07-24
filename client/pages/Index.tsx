@@ -47,7 +47,7 @@ export default function Index() {
         </section>
 
         {/* Welcome Section */}
-        <section className="flex flex-col justify-center items-center gap-12 lg:gap-20 py-16 lg:py-25 px-4 md:px-16 lg:px-20">
+        <section className="flex flex-col justify-center items-center gap-12 lg:gap-20 py-16 lg:py-24 px-4 md:px-16 lg:px-20">
           <div className="flex flex-col justify-center items-center gap-6 max-w-4xl text-center">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-wastex-text leading-tight tracking-wider">
               Welcome to WasteX
