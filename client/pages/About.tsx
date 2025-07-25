@@ -131,7 +131,7 @@ export default function About() {
                 style={{
                   width: "336px",
                   height: "183px",
-                  left: "213px",
+                  left: "270px",
                   top: "61px",
                 }}
               >
