@@ -83,53 +83,82 @@ export default function About() {
         </section>
 
         {/* Get Started Section */}
-        <section className="py-14 px-4 md:px-16 lg:px-80" style={{ backgroundColor: '#9BDCAE' }}>
+        <section
+          className="py-14 px-4 md:px-16 lg:px-80"
+          style={{ backgroundColor: "#9BDCAE" }}
+        >
           <div className="flex flex-col lg:flex-row items-center gap-8">
             {/* Left Image with Profile Complex Layout */}
-            <div className="relative flex-shrink-0" style={{ height: '188px', paddingRight: '26.5px' }}>
+            <div
+              className="relative flex-shrink-0"
+              style={{ height: "188px", paddingRight: "26.5px" }}
+            >
               {/* Background container */}
-              <div className="relative" style={{ width: '608px', height: '299px', position: 'absolute', left: '-244px', top: '-56px' }}>
+              <div
+                className="relative"
+                style={{
+                  width: "608px",
+                  height: "299px",
+                  position: "absolute",
+                  left: "-244px",
+                  top: "-56px",
+                }}
+              >
                 {/* Large green circle */}
-                <div className="absolute rounded-full" style={{
-                  width: '716px',
-                  height: '716px',
-                  backgroundColor: '#61BD7C',
-                  left: '-110px',
-                  top: '-208px'
-                }}></div>
+                <div
+                  className="absolute rounded-full"
+                  style={{
+                    width: "716px",
+                    height: "716px",
+                    backgroundColor: "#61BD7C",
+                    left: "-110px",
+                    top: "-208px",
+                  }}
+                ></div>
 
                 {/* Container for truck and avatar */}
-                <div className="absolute" style={{ width: '336px', height: '183px', left: '213px', top: '61px' }}>
+                <div
+                  className="absolute"
+                  style={{
+                    width: "336px",
+                    height: "183px",
+                    left: "213px",
+                    top: "61px",
+                  }}
+                >
                   {/* Truck image */}
                   <img
                     src="https://api.builder.io/api/v1/image/assets/TEMP/2ff35b133587e568e990200d85139b48daa7ddd8?width=494"
                     alt="Waste management truck"
                     className="absolute"
                     style={{
-                      width: '247px',
-                      height: '165px',
-                      left: '89px',
-                      top: '12px'
+                      width: "247px",
+                      height: "165px",
+                      left: "89px",
+                      top: "12px",
                     }}
                   />
 
                   {/* Avatar circle */}
-                  <div className="absolute rounded-full border-6 flex items-center justify-center overflow-hidden" style={{
-                    width: '183px',
-                    height: '183px',
-                    borderColor: '#61BD7C',
-                    left: '0px',
-                    top: '0px'
-                  }}>
+                  <div
+                    className="absolute rounded-full border-6 flex items-center justify-center overflow-hidden"
+                    style={{
+                      width: "183px",
+                      height: "183px",
+                      borderColor: "#61BD7C",
+                      left: "0px",
+                      top: "0px",
+                    }}
+                  >
                     <img
                       src="https://api.builder.io/api/v1/image/assets/TEMP/74e645f36d84fdbc6def2c6c24161b3e04362606?width=530"
                       alt="Team member"
                       className="absolute object-cover"
                       style={{
-                        width: '265px',
-                        height: '302px',
-                        left: '-27px',
-                        top: '-26px'
+                        width: "265px",
+                        height: "302px",
+                        left: "-27px",
+                        top: "-26px",
                       }}
                     />
                   </div>
@@ -139,8 +168,13 @@ export default function About() {
 
             {/* Right Content */}
             <div className="flex flex-col items-start gap-8 max-w-2xl">
-              <h2 className="text-2xl text-black leading-normal" style={{ width: '792px' }}>
-                Join WasteX for <span className="font-bold">FREE</span> and enjoy your first job on us! Simplify your waste management today!
+              <h2
+                className="text-2xl text-black leading-normal"
+                style={{ width: "792px" }}
+              >
+                Join WasteX for <span className="font-bold">FREE</span> and
+                enjoy your first job on us! Simplify your waste management
+                today!
               </h2>
 
               <button className="bg-wastex-secondary text-white px-6 py-3 rounded-full text-xl font-bold tracking-wider hover:bg-wastex-secondary/90 transition-colors">
