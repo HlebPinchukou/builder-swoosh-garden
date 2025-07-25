@@ -159,6 +159,147 @@ export default function Index() {
           </div>
         </section>
 
+        {/* Popular waste items Section */}
+        <section className="relative bg-wastex-dark-bg py-14">
+          {/* Background Pattern */}
+          <div className="absolute inset-0 opacity-60">
+            <img
+              src="https://api.builder.io/api/v1/image/assets/TEMP/d3eb29f554cb4a27046fe90a15dc3ffc674c155f?width=3001"
+              alt="Background pattern"
+              className="w-full h-full object-cover"
+            />
+          </div>
+
+          {/* Content */}
+          <div className="relative z-10 container mx-auto px-8">
+            {/* Title */}
+            <h2 className="text-wastex-hero-text text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-12 leading-tight tracking-wider">
+              Popular waste items
+            </h2>
+
+            {/* Waste Cards Grid */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 mb-4">
+              {/* PLASTICS Card */}
+              <div className="bg-wastex-card-bg rounded-lg p-4 flex flex-col gap-4">
+                <img
+                  src="https://api.builder.io/api/v1/image/assets/TEMP/a1e52734bb1b3fa8e36ad173efea3a4962188caa?width=150"
+                  alt="Plastics icon"
+                  className="w-19 h-19 rounded-full"
+                />
+                <div className="flex flex-col gap-2">
+                  <h3 className="text-wastex-hero-text text-xl font-bold tracking-wider">PLASTICS</h3>
+                  <p className="text-wastex-hero-text text-base leading-relaxed tracking-wide">
+                    Includes bottles, wrapping, and other plastic materials.
+                  </p>
+                </div>
+              </div>
+
+              {/* METALS Card */}
+              <div className="bg-wastex-card-bg rounded-lg p-4 flex flex-col gap-4">
+                <img
+                  src="https://api.builder.io/api/v1/image/assets/TEMP/ddcb5985d858108cb3d85706414f556eee83cc56?width=150"
+                  alt="Metals icon"
+                  className="w-19 h-19 rounded-full"
+                />
+                <div className="flex flex-col gap-2">
+                  <h3 className="text-wastex-hero-text text-xl font-bold tracking-wider">METALS</h3>
+                  <p className="text-wastex-hero-text text-base leading-relaxed tracking-wide">
+                    Covers steel, copper, aluminum, and other metals.
+                  </p>
+                </div>
+              </div>
+
+              {/* OILS Card */}
+              <div className="bg-wastex-card-bg rounded-lg p-4 flex flex-col gap-4">
+                <img
+                  src="https://api.builder.io/api/v1/image/assets/TEMP/0cafb91f8185b96c5f6e53609cbebb36f5ab9829?width=150"
+                  alt="Oils icon"
+                  className="w-19 h-19 rounded-full"
+                />
+                <div className="flex flex-col gap-2">
+                  <h3 className="text-wastex-hero-text text-xl font-bold tracking-wider">OILS</h3>
+                  <p className="text-wastex-hero-text text-base leading-relaxed tracking-wide">
+                    Includes lubricant, crude, vegetable, and hydraulic oils.
+                  </p>
+                </div>
+              </div>
+
+              {/* E-WASTE Card */}
+              <div className="bg-wastex-card-bg rounded-lg p-4 flex flex-col gap-4">
+                <img
+                  src="https://api.builder.io/api/v1/image/assets/TEMP/d8fa64ec8d0e858b0bb86710ce035392f825e722?width=150"
+                  alt="E-waste icon"
+                  className="w-19 h-19 rounded-full"
+                />
+                <div className="flex flex-col gap-2">
+                  <h3 className="text-wastex-hero-text text-xl font-bold tracking-wider">E-WASTE</h3>
+                  <p className="text-wastex-hero-text text-base leading-relaxed tracking-wide">
+                    Consists of batteries, computers, phones and other electronic waste.
+                  </p>
+                </div>
+              </div>
+
+              {/* APPLIANCES Card */}
+              <div className="bg-wastex-card-bg rounded-lg p-4 flex flex-col gap-4">
+                <img
+                  src="https://api.builder.io/api/v1/image/assets/TEMP/ad33659c33381eac40061641b81f19d65a13ad9f?width=150"
+                  alt="Appliances icon"
+                  className="w-19 h-19 rounded-full"
+                />
+                <div className="flex flex-col gap-2">
+                  <h3 className="text-wastex-hero-text text-xl font-bold tracking-wider">APPLIANCES</h3>
+                  <p className="text-wastex-hero-text text-base leading-relaxed tracking-wide">
+                    Covers large items such as stoves, AC units, refrigerators, freezers, TVs, beds, mattresses, sofas, and tables.
+                  </p>
+                </div>
+              </div>
+
+              {/* BIOWASTE Card */}
+              <div className="bg-wastex-card-bg rounded-lg p-4 flex flex-col gap-4">
+                <div className="w-19 h-19 bg-wastex-primary rounded-full flex items-center justify-center">
+                  {/* Biowaste icon placeholder - will be styled properly */}
+                </div>
+                <div className="flex flex-col gap-2">
+                  <h3 className="text-wastex-hero-text text-xl font-bold tracking-wider">BIOWASTE</h3>
+                  <p className="text-wastex-hero-text text-base leading-relaxed tracking-wide">
+                    Includes organic waste such as food scraps, garden waste, and biodegradable materials.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Navigation */}
+            <div className="flex items-center justify-center gap-6 mb-8">
+              {/* Left Arrow - Disabled */}
+              <button className="w-12 h-12 bg-white rounded-full flex items-center justify-center opacity-20">
+                <svg className="w-6 h-6" viewBox="0 0 24 24" fill="none">
+                  <path d="M15 18L9 12L15 6" stroke="#0F2415" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+              </button>
+
+              {/* Dots */}
+              <div className="flex items-center gap-4">
+                <div className="w-2 h-2 bg-wastex-primary rounded-full"></div>
+                <div className="w-2 h-2 bg-gray-400 bg-opacity-80 rounded-full"></div>
+              </div>
+
+              {/* Right Arrow - Active */}
+              <button className="w-12 h-12 bg-white rounded-full flex items-center justify-center">
+                <svg className="w-6 h-6" viewBox="0 0 24 24" fill="none">
+                  <path d="M9 18L15 12L9 6" stroke="#0F2415" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+              </button>
+            </div>
+
+            {/* Get Started Button */}
+            <div className="flex justify-center">
+              <button className="bg-wastex-primary text-wastex-text px-8 py-4 rounded-full text-xl md:text-2xl font-bold tracking-wider hover:bg-wastex-primary/90 transition-colors">
+                Get started
+              </button>
+            </div>
+          </div>
+        </section>
+
         {/* Features Section */}
         <section className="py-20 bg-white">
           <div className="container mx-auto px-4">
