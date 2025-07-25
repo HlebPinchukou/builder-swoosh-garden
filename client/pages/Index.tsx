@@ -308,7 +308,7 @@ export default function Index() {
             </div>
 
             {/* Purple decorative square */}
-            <div className="absolute bottom-8 right-16 w-30 h-30 bg-purple-300 rounded-2xl mix-blend-multiply hidden lg:block"></div>
+            <div className="absolute bottom-8 right-16 w-32 h-32 bg-wastex-purple rounded-2xl mix-blend-multiply hidden lg:block"></div>
           </div>
         </section>
 
