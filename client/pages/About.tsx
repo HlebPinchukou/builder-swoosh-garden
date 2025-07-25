@@ -189,13 +189,13 @@ export default function About() {
 
           {/* Right Content */}
           <div
-            className="flex flex-col justify-center items-start gap-8 relative"
+            className="flex flex-col justify-center items-start gap-8 relative ml-8"
             style={{ width: "529px" }}
           >
             <div
               className="relative"
               style={{
-                width: "792px",
+                width: "500px",
                 color: "#1A1A1A",
                 fontFamily: "Inter",
                 fontSize: "24px",
