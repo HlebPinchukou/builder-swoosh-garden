@@ -72,6 +72,7 @@ export default {
           "icon-bg": "hsl(var(--wastex-icon-bg))",
           "dark-bg": "hsl(var(--wastex-dark-bg))",
           "card-bg": "hsl(var(--wastex-card-bg))",
+          purple: "hsl(var(--wastex-purple))",
         },
       },
       borderRadius: {
