@@ -239,7 +239,7 @@ export default function Index() {
             {/* Bottom - Feature Cards */}
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
               {/* Feature Card 1 */}
-              <div className="flex items-start gap-3 p-4 rounded-lg bg-gray-100 bg-opacity-20">
+              <div className="flex items-start gap-3 p-4 rounded-lg" style={{ backgroundColor: 'rgba(194, 198, 196, 0.20)' }}>
                 <div className="flex w-8 h-8 items-center justify-center rounded-full bg-wastex-icon-bg flex-shrink-0">
                   <svg className="w-6 h-6" viewBox="0 0 24 25" fill="none">
                     <path d="M20 6.69995L9 17.7L4 12.7" stroke="#0F2415" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
@@ -256,7 +256,7 @@ export default function Index() {
               </div>
 
               {/* Feature Card 2 */}
-              <div className="flex items-start gap-3 p-4 rounded-lg bg-gray-100 bg-opacity-20">
+              <div className="flex items-start gap-3 p-4 rounded-lg" style={{ backgroundColor: 'rgba(194, 198, 196, 0.20)' }}>
                 <div className="flex w-8 h-8 items-center justify-center rounded-full bg-wastex-icon-bg flex-shrink-0">
                   <svg className="w-6 h-6" viewBox="0 0 24 25" fill="none">
                     <path d="M20 6.69995L9 17.7L4 12.7" stroke="#0F2415" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
@@ -273,7 +273,7 @@ export default function Index() {
               </div>
 
               {/* Feature Card 3 */}
-              <div className="flex items-start gap-3 p-4 rounded-lg bg-gray-100 bg-opacity-20">
+              <div className="flex items-start gap-3 p-4 rounded-lg" style={{ backgroundColor: 'rgba(194, 198, 196, 0.20)' }}>
                 <div className="flex w-8 h-8 items-center justify-center rounded-full bg-wastex-icon-bg flex-shrink-0">
                   <svg className="w-6 h-6" viewBox="0 0 24 25" fill="none">
                     <path d="M20 6.69995L9 17.7L4 12.7" stroke="#0F2415" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
@@ -290,7 +290,7 @@ export default function Index() {
               </div>
 
               {/* Feature Card 4 */}
-              <div className="flex items-start gap-3 p-4 rounded-lg bg-gray-100 bg-opacity-20">
+              <div className="flex items-start gap-3 p-4 rounded-lg" style={{ backgroundColor: 'rgba(194, 198, 196, 0.20)' }}>
                 <div className="flex w-8 h-8 items-center justify-center rounded-full bg-wastex-icon-bg flex-shrink-0">
                   <svg className="w-6 h-6" viewBox="0 0 24 25" fill="none">
                     <path d="M20 6.69995L9 17.7L4 12.7" stroke="#0F2415" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
