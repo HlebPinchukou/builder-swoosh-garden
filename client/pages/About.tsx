@@ -6,7 +6,10 @@ export default function About() {
       <Navigation />
       <div className="min-h-screen">
         {/* Contact us Section */}
-        <section className="py-16 px-4 md:px-16 lg:px-36" style={{ backgroundColor: 'rgba(194, 198, 196, 0.20)' }}>
+        <section
+          className="py-16 px-4 md:px-16 lg:px-36"
+          style={{ backgroundColor: "rgba(194, 198, 196, 0.20)" }}
+        >
           <div className="flex flex-col lg:flex-row items-center gap-12">
             {/* Left Image */}
             <div className="relative flex-shrink-0">
@@ -44,8 +47,18 @@ export default function About() {
                       <option value="support">Support</option>
                       <option value="partnership">Partnership</option>
                     </select>
-                    <svg className="absolute right-0 top-4 w-6 h-6 text-gray-400 pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path d="M6 9l6 6 6-6" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                    <svg
+                      className="absolute right-0 top-4 w-6 h-6 text-gray-400 pointer-events-none"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M6 9l6 6 6-6"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
                     </svg>
                   </div>
                 </div>
@@ -74,7 +87,7 @@ export default function About() {
             <div className="relative flex-shrink-0">
               {/* Green circle background */}
               <div className="absolute -left-28 -top-12 w-96 h-72 bg-wastex-secondary rounded-full"></div>
-              
+
               {/* Truck image */}
               <div className="relative z-10">
                 <img
@@ -99,7 +112,9 @@ export default function About() {
             {/* Right Content */}
             <div className="flex flex-col items-start gap-8 max-w-2xl">
               <h2 className="text-2xl text-black leading-normal">
-                Join WasteX for <span className="font-bold">FREE</span> and enjoy your first job on us! Simplify your waste management today!
+                Join WasteX for <span className="font-bold">FREE</span> and
+                enjoy your first job on us! Simplify your waste management
+                today!
               </h2>
 
               <button className="bg-wastex-secondary text-white px-6 py-3 rounded-full text-xl font-bold tracking-wider hover:bg-wastex-secondary/90 transition-colors">
