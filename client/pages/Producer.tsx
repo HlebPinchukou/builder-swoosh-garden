@@ -16,13 +16,12 @@ export default function Producer() {
         </section>
 
         {/* Waste into Value Section */}
-        <section className="relative bg-wastex-dark-bg" style={{ height: '372px' }}>
+        <section className="relative bg-wastex-dark-bg overflow-hidden" style={{ height: '372px' }}>
           {/* Background Image */}
           <img
             src="https://api.builder.io/api/v1/image/assets/TEMP/fa9285f9f3e41bba6ace5d621afa7df29d19dd75?width=3001"
             alt="Background"
             className="absolute inset-0 w-full h-full object-cover opacity-60"
-            style={{ width: '1500px', height: '844px', left: '-30px', top: '0px' }}
           />
 
           {/* Content */}
