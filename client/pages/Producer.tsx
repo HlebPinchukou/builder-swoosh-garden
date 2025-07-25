@@ -6,13 +6,36 @@ export default function Producer() {
       <Navigation />
       <div className="min-h-screen">
         {/* Hero Section */}
-        <section className="relative">
-          <img
-            src="https://api.builder.io/api/v1/image/assets/TEMP/d1492f34038c8852b868e08b5c1c42675919bd0b?width=2880"
-            alt="Producer Hero"
-            className="w-full h-auto object-cover"
-            style={{ height: '539px' }}
-          />
+        <section className="py-16 px-4 md:px-16 lg:px-20 bg-gray-100" style={{ height: '539px' }}>
+          <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16 h-full">
+            {/* Left Content */}
+            <div className="flex flex-col items-start gap-12 max-w-2xl">
+              <div className="flex flex-col gap-4">
+                <h3 className="text-wastex-secondary text-2xl font-bold uppercase tracking-wider">
+                  PRODUCER
+                </h3>
+                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-black leading-tight tracking-wider">
+                  Turn waste into opportunity
+                </h1>
+                <p className="text-xl text-black leading-relaxed tracking-wide">
+                  Producers create waste and need a quick, responsible way to dispose of it. WasteX connects them with Buyers who see value in their junk—easy and eco-friendly!
+                </p>
+              </div>
+            </div>
+
+            {/* Right Image */}
+            <div className="relative flex-shrink-0">
+              {/* Purple decorative square */}
+              <div className="absolute -left-8 -top-8 w-26 h-26 bg-purple-300 rounded-2xl"></div>
+              <div className="relative bg-wastex-dark-bg rounded-2xl p-6">
+                <img
+                  src="https://api.builder.io/api/v1/image/assets/TEMP/6dab52b9f6d40787faebe4c677c4baf3dda5ae0d?width=1297"
+                  alt="Waste management professionals"
+                  className="w-full max-w-2xl h-auto rounded-lg"
+                />
+              </div>
+            </div>
+          </div>
         </section>
 
         {/* Waste into Value Section */}
