@@ -219,7 +219,7 @@ export default function Index() {
                   <img
                     src="https://api.builder.io/api/v1/image/assets/TEMP/13ba8f34a8878ff77e762e9399041f32b34cd3c9?width=1296"
                     alt="WasteX Dashboard Interface"
-                    className="w-full max-w-2xl h-auto rounded-lg shadow-lg"
+                    className="w-full max-w-2xl h-auto"
                   />
                 </div>
               </div>
