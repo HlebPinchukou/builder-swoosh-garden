@@ -15,13 +15,11 @@ export default function About() {
             <div className="relative flex-shrink-0">
               {/* Light Green decorative square */}
               <div className="absolute -left-8 -top-8 w-26 h-26 bg-green-200 rounded-2xl"></div>
-              <div className="relative bg-wastex-dark-bg rounded-2xl p-6">
-                <img
-                  src="https://api.builder.io/api/v1/image/assets/TEMP/4baf6be7630688b03c2d0ed7b4b642ba640bc556?width=1197"
-                  alt="Customer service representative"
-                  className="w-full max-w-lg h-auto rounded-lg relative z-10"
-                />
-              </div>
+              <img
+                src="https://api.builder.io/api/v1/image/assets/TEMP/4baf6be7630688b03c2d0ed7b4b642ba640bc556?width=1197"
+                alt="Customer service representative"
+                className="w-full max-w-lg h-auto rounded-2xl relative z-10"
+              />
             </div>
 
             {/* Right Content */}
