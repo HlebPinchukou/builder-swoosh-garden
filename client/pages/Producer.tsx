@@ -27,13 +27,11 @@ export default function Producer() {
             <div className="relative flex-shrink-0">
               {/* Purple decorative square */}
               <div className="absolute -left-8 -top-8 w-26 h-26 bg-purple-300 rounded-2xl"></div>
-              <div className="relative bg-wastex-dark-bg rounded-2xl p-6">
-                <img
-                  src="https://api.builder.io/api/v1/image/assets/TEMP/6dab52b9f6d40787faebe4c677c4baf3dda5ae0d?width=1297"
-                  alt="Waste management professionals"
-                  className="w-full max-w-2xl h-auto rounded-lg"
-                />
-              </div>
+              <img
+                src="https://api.builder.io/api/v1/image/assets/TEMP/6dab52b9f6d40787faebe4c677c4baf3dda5ae0d?width=1297"
+                alt="Waste management professionals"
+                className="w-full max-w-2xl h-auto rounded-2xl relative z-10"
+              />
             </div>
           </div>
         </section>
