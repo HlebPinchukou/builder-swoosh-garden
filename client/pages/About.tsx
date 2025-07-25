@@ -85,7 +85,7 @@ export default function About() {
           className="flex justify-center items-center gap-8 relative overflow-hidden"
           style={{
             padding: "56px 324px",
-            backgroundColor: "#9BDCAE"
+            backgroundColor: "#9BDCAE",
           }}
         >
           {/* Left Image with Profile Complex Layout */}
@@ -93,7 +93,7 @@ export default function About() {
             className="flex items-center relative flex-shrink-0"
             style={{
               height: "188px",
-              paddingRight: "26.5px"
+              paddingRight: "26.5px",
             }}
           >
             {/* Background container */}
@@ -119,7 +119,7 @@ export default function About() {
                   borderRadius: "716px",
                   background: "#61BD7C",
                   left: "-50px",
-                  top: "-208px"
+                  top: "-208px",
                 }}
               >
                 <circle cx="248" cy="150" r="358" fill="#61BD7C" />
@@ -201,17 +201,43 @@ export default function About() {
                 fontSize: "24px",
                 fontStyle: "normal",
                 fontWeight: "600",
-                lineHeight: "normal"
+                lineHeight: "normal",
               }}
             >
-              <span style={{ fontFamily: "Inter, -apple-system, Roboto, Helvetica, sans-serif", fontWeight: "400", fontSize: "24px", color: "rgba(26,26,26,1)" }}>
+              <span
+                style={{
+                  fontFamily:
+                    "Inter, -apple-system, Roboto, Helvetica, sans-serif",
+                  fontWeight: "400",
+                  fontSize: "24px",
+                  color: "rgba(26,26,26,1)",
+                }}
+              >
                 Join WasteX for{" "}
               </span>
-              <span style={{ fontFamily: "Inter, -apple-system, Roboto, Helvetica, sans-serif", fontWeight: "700", fontSize: "24px", color: "rgba(26,26,26,1)" }}>
+              <span
+                style={{
+                  fontFamily:
+                    "Inter, -apple-system, Roboto, Helvetica, sans-serif",
+                  fontWeight: "700",
+                  fontSize: "24px",
+                  color: "rgba(26,26,26,1)",
+                }}
+              >
                 FREE
               </span>
-              <span style={{ fontFamily: "Inter, -apple-system, Roboto, Helvetica, sans-serif", fontWeight: "400", fontSize: "24px", color: "rgba(26,26,26,1)" }}>
-                {" "}and enjoy your first job on us! Simplify your waste management today!
+              <span
+                style={{
+                  fontFamily:
+                    "Inter, -apple-system, Roboto, Helvetica, sans-serif",
+                  fontWeight: "400",
+                  fontSize: "24px",
+                  color: "rgba(26,26,26,1)",
+                }}
+              >
+                {" "}
+                and enjoy your first job on us! Simplify your waste management
+                today!
               </span>
             </div>
 
@@ -219,7 +245,7 @@ export default function About() {
               className="flex justify-center items-center gap-2 relative rounded-full"
               style={{
                 padding: "12px 24px",
-                background: "#275D37"
+                background: "#275D37",
               }}
             >
               <div
@@ -231,7 +257,7 @@ export default function About() {
                   color: "#F5F5F5",
                   fontStyle: "normal",
                   lineHeight: "32px",
-                  letterSpacing: "1px"
+                  letterSpacing: "1px",
                 }}
               >
                 Get started
