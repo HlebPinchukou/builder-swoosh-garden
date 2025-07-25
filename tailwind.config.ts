@@ -14,8 +14,8 @@ export default {
     },
     extend: {
       fontFamily: {
-        sans: ['Inter', 'system-ui', 'sans-serif'],
-        'automate': ['Automate OT', 'system-ui', 'sans-serif'],
+        sans: ["Inter", "system-ui", "sans-serif"],
+        automate: ["Automate OT", "system-ui", "sans-serif"],
       },
       colors: {
         border: "hsl(var(--border))",
