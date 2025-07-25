@@ -70,6 +70,8 @@ export default {
           "hero-overlay": "hsl(var(--wastex-hero-overlay))",
           "hero-text": "hsl(var(--wastex-hero-text))",
           "icon-bg": "hsl(var(--wastex-icon-bg))",
+          "dark-bg": "hsl(var(--wastex-dark-bg))",
+          "card-bg": "hsl(var(--wastex-card-bg))",
         },
       },
       borderRadius: {
