@@ -220,11 +220,13 @@ export default function Producer() {
             <div className="relative flex-shrink-0">
               {/* Green decorative square in upper left corner */}
               <div className="absolute -left-8 -top-8 w-26 h-26 bg-wastex-icon-bg rounded-2xl"></div>
-              <img
-                src="https://api.builder.io/api/v1/image/assets/TEMP/e090b71e5893ad3fffaf09a390fdb11a624b9335?width=990"
-                alt="Recycler worker"
-                className="w-full max-w-lg h-auto rounded-2xl relative z-10"
-              />
+              <div className="relative bg-wastex-dark-bg rounded-2xl p-6">
+                <img
+                  src="https://api.builder.io/api/v1/image/assets/TEMP/e090b71e5893ad3fffaf09a390fdb11a624b9335?width=990"
+                  alt="Recycler worker"
+                  className="w-full max-w-lg h-auto rounded-lg relative z-10"
+                />
+              </div>
             </div>
 
             {/* Right Content */}
