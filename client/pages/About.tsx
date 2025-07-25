@@ -102,7 +102,7 @@ export default function About() {
               style={{
                 width: "608px",
                 height: "299px",
-                left: "-244px",
+                left: "-300px",
                 top: "-56px",
               }}
             >
@@ -118,7 +118,7 @@ export default function About() {
                   height: "716px",
                   borderRadius: "716px",
                   background: "#61BD7C",
-                  left: "-110px",
+                  left: "-50px",
                   top: "-208px"
                 }}
               >
