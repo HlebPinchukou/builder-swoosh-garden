@@ -184,7 +184,7 @@ export default function Index() {
                 <img
                   src="https://api.builder.io/api/v1/image/assets/TEMP/a1e52734bb1b3fa8e36ad173efea3a4962188caa?width=150"
                   alt="Plastics icon"
-                  className="w-19 h-19 rounded-full"
+                  className="w-20 h-20 rounded-full"
                 />
                 <div className="flex flex-col gap-2">
                   <h3 className="text-wastex-hero-text text-xl font-bold tracking-wider">PLASTICS</h3>
@@ -199,7 +199,7 @@ export default function Index() {
                 <img
                   src="https://api.builder.io/api/v1/image/assets/TEMP/ddcb5985d858108cb3d85706414f556eee83cc56?width=150"
                   alt="Metals icon"
-                  className="w-19 h-19 rounded-full"
+                  className="w-20 h-20 rounded-full"
                 />
                 <div className="flex flex-col gap-2">
                   <h3 className="text-wastex-hero-text text-xl font-bold tracking-wider">METALS</h3>
@@ -214,7 +214,7 @@ export default function Index() {
                 <img
                   src="https://api.builder.io/api/v1/image/assets/TEMP/0cafb91f8185b96c5f6e53609cbebb36f5ab9829?width=150"
                   alt="Oils icon"
-                  className="w-19 h-19 rounded-full"
+                  className="w-20 h-20 rounded-full"
                 />
                 <div className="flex flex-col gap-2">
                   <h3 className="text-wastex-hero-text text-xl font-bold tracking-wider">OILS</h3>
@@ -229,7 +229,7 @@ export default function Index() {
                 <img
                   src="https://api.builder.io/api/v1/image/assets/TEMP/d8fa64ec8d0e858b0bb86710ce035392f825e722?width=150"
                   alt="E-waste icon"
-                  className="w-19 h-19 rounded-full"
+                  className="w-20 h-20 rounded-full"
                 />
                 <div className="flex flex-col gap-2">
                   <h3 className="text-wastex-hero-text text-xl font-bold tracking-wider">E-WASTE</h3>
@@ -244,7 +244,7 @@ export default function Index() {
                 <img
                   src="https://api.builder.io/api/v1/image/assets/TEMP/ad33659c33381eac40061641b81f19d65a13ad9f?width=150"
                   alt="Appliances icon"
-                  className="w-19 h-19 rounded-full"
+                  className="w-20 h-20 rounded-full"
                 />
                 <div className="flex flex-col gap-2">
                   <h3 className="text-wastex-hero-text text-xl font-bold tracking-wider">APPLIANCES</h3>
