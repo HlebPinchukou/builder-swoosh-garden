@@ -16,13 +16,38 @@ export default function Producer() {
         </section>
 
         {/* Waste into Value Section */}
-        <section className="relative">
+        <section className="relative bg-wastex-dark-bg" style={{ height: '372px' }}>
+          {/* Background Image */}
           <img
-            src="https://api.builder.io/api/v1/image/assets/TEMP/a4fdb884e4230700992fb89663ea41a53554211c?width=2880"
-            alt="Turn waste into opportunity"
-            className="w-full h-auto object-cover"
-            style={{ height: '372px' }}
+            src="https://api.builder.io/api/v1/image/assets/TEMP/fa9285f9f3e41bba6ace5d621afa7df29d19dd75?width=3001"
+            alt="Background"
+            className="absolute inset-0 w-full h-full object-cover opacity-60"
+            style={{ width: '1500px', height: '844px', left: '-30px', top: '0px' }}
           />
+
+          {/* Content */}
+          <div className="absolute inset-0 flex items-center px-4 md:px-16 lg:px-36">
+            <div className="flex flex-col lg:flex-row items-center gap-12 w-full max-w-7xl mx-auto">
+              {/* Left Image */}
+              <div className="flex-shrink-0">
+                <img
+                  src="https://api.builder.io/api/v1/image/assets/TEMP/f17894db0096c2da1712d036f1db7e9c58f779c9?width=890"
+                  alt="Workers discussing waste management"
+                  className="w-full max-w-md rounded-2xl"
+                />
+              </div>
+
+              {/* Right Content */}
+              <div className="flex flex-col items-start gap-6 max-w-lg text-white">
+                <h2 className="text-2xl font-semibold uppercase tracking-wider">
+                  SELL YOUR WASTE
+                </h2>
+                <p className="text-xl leading-relaxed tracking-wide">
+                  As a Producer, the waste you generate may still hold value. Instead of sending it to a landfill, WasteX helps you connect with recyclers, buyers, or businesses that can repurpose it—transforming waste into new opportunities and sustainable solutions.
+                </p>
+              </div>
+            </div>
+          </div>
         </section>
 
         {/* Benefits Section */}
