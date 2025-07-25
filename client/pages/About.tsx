@@ -82,79 +82,101 @@ export default function About() {
 
         {/* Get Started Section */}
         <section
-          className="py-14 px-4 md:px-16 lg:px-80"
-          style={{ backgroundColor: "#9BDCAE" }}
+          className="flex justify-center items-center gap-8 relative"
+          style={{
+            padding: "56px 324px",
+            backgroundColor: "#9BDCAE"
+          }}
         >
-          <div className="flex flex-col lg:flex-row items-center gap-8">
-            {/* Left Image with Profile Complex Layout */}
+          {/* Left Image with Profile Complex Layout */}
+          <div
+            className="flex items-center relative flex-shrink-0"
+            style={{
+              height: "188px",
+              paddingRight: "26.5px"
+            }}
+          >
+            {/* Background container */}
             <div
-              className="relative flex-shrink-0"
-              style={{ height: "188px", paddingRight: "26.5px" }}
+              className="absolute"
+              style={{
+                width: "608px",
+                height: "299px",
+                left: "-244px",
+                top: "-56px",
+              }}
             >
-              {/* Background container */}
-              <div
-                className="relative"
+              {/* SVG Background Circle */}
+              <svg
+                width="606"
+                height="299"
+                viewBox="0 0 606 299"
+                fill="none"
+                className="absolute"
                 style={{
-                  width: "608px",
-                  height: "299px",
-                  position: "absolute",
-                  left: "-244px",
-                  top: "-56px",
+                  width: "716px",
+                  height: "716px",
+                  borderRadius: "716px",
+                  background: "#61BD7C",
+                  left: "-110px",
+                  top: "-208px"
                 }}
               >
-                {/* Large green circle */}
-                <div
-                  className="absolute rounded-full"
-                  style={{
-                    width: "716px",
-                    height: "716px",
-                    backgroundColor: "#61BD7C",
-                    left: "-110px",
-                    top: "-208px",
-                  }}
-                ></div>
+                <circle cx="248" cy="150" r="358" fill="#61BD7C" />
+              </svg>
 
-                {/* Container for truck and avatar */}
-                <div
+              {/* Container for truck and avatar */}
+              <div
+                className="absolute"
+                style={{
+                  width: "336px",
+                  height: "183px",
+                  left: "213px",
+                  top: "61px",
+                }}
+              >
+                {/* Truck image */}
+                <img
+                  src="https://api.builder.io/api/v1/image/assets/TEMP/2ff35b133587e568e990200d85139b48daa7ddd8?width=494"
+                  alt=""
                   className="absolute"
                   style={{
-                    width: "336px",
+                    width: "247px",
+                    height: "165px",
+                    aspectRatio: "246.99/164.50",
+                    left: "89px",
+                    top: "12px",
+                  }}
+                />
+
+                {/* Avatar circle */}
+                <div
+                  className="flex flex-col justify-center items-center absolute rounded-full overflow-hidden"
+                  style={{
+                    width: "183px",
                     height: "183px",
-                    left: "213px",
-                    top: "61px",
+                    border: "6px solid #61BD7C",
+                    left: "0px",
+                    top: "0px",
                   }}
                 >
-                  {/* Truck image */}
-                  <img
-                    src="https://api.builder.io/api/v1/image/assets/TEMP/2ff35b133587e568e990200d85139b48daa7ddd8?width=494"
-                    alt="Waste management truck"
-                    className="absolute"
-                    style={{
-                      width: "247px",
-                      height: "165px",
-                      left: "89px",
-                      top: "12px",
-                    }}
-                  />
-
-                  {/* Avatar circle */}
                   <div
-                    className="absolute rounded-full border-6 flex items-center justify-center overflow-hidden"
+                    className="absolute"
                     style={{
                       width: "183px",
                       height: "183px",
-                      borderColor: "#61BD7C",
                       left: "0px",
                       top: "0px",
                     }}
                   >
                     <img
                       src="https://api.builder.io/api/v1/image/assets/TEMP/74e645f36d84fdbc6def2c6c24161b3e04362606?width=530"
-                      alt="Team member"
-                      className="absolute object-cover"
+                      alt=""
+                      className="absolute"
                       style={{
                         width: "265px",
                         height: "302px",
+                        aspectRatio: "265/302",
                         left: "-27px",
                         top: "-26px",
                       }}
@@ -163,21 +185,57 @@ export default function About() {
                 </div>
               </div>
             </div>
+          </div>
 
-            {/* Right Content */}
-            <div className="flex flex-col items-start gap-8 max-w-2xl">
-              <h2
-                className="text-2xl text-black leading-normal"
-                style={{ width: "792px" }}
+          {/* Right Content */}
+          <div
+            className="flex flex-col justify-center items-start gap-8 relative"
+            style={{ width: "529px" }}
+          >
+            <div
+              className="relative"
+              style={{
+                width: "792px",
+                color: "#1A1A1A",
+                fontFamily: "Inter",
+                fontSize: "24px",
+                fontStyle: "normal",
+                fontWeight: "600",
+                lineHeight: "normal"
+              }}
+            >
+              <span style={{ fontFamily: "Inter, -apple-system, Roboto, Helvetica, sans-serif", fontWeight: "400", fontSize: "24px", color: "rgba(26,26,26,1)" }}>
+                Join WasteX for{" "}
+              </span>
+              <span style={{ fontFamily: "Inter, -apple-system, Roboto, Helvetica, sans-serif", fontWeight: "700", fontSize: "24px", color: "rgba(26,26,26,1)" }}>
+                FREE
+              </span>
+              <span style={{ fontFamily: "Inter, -apple-system, Roboto, Helvetica, sans-serif", fontWeight: "400", fontSize: "24px", color: "rgba(26,26,26,1)" }}>
+                {" "}and enjoy your first job on us! Simplify your waste management today!
+              </span>
+            </div>
+
+            <div
+              className="flex justify-center items-center gap-2 relative rounded-full"
+              style={{
+                padding: "12px 24px",
+                background: "#275D37"
+              }}
+            >
+              <div
+                className="relative"
+                style={{
+                  fontFamily: "'Automate OT'",
+                  fontWeight: "400",
+                  fontSize: "20px",
+                  color: "#F5F5F5",
+                  fontStyle: "normal",
+                  lineHeight: "32px",
+                  letterSpacing: "1px"
+                }}
               >
-                Join WasteX for <span className="font-bold">FREE</span> and
-                enjoy your first job on us! Simplify your waste management
-                today!
-              </h2>
-
-              <button className="bg-wastex-secondary text-white px-6 py-3 rounded-full text-xl font-bold tracking-wider hover:bg-wastex-secondary/90 transition-colors">
                 Get started
-              </button>
+              </div>
             </div>
           </div>
         </section>
