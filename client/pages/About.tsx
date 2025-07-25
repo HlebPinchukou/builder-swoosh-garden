@@ -82,7 +82,7 @@ export default function About() {
 
         {/* Get Started Section */}
         <section
-          className="flex justify-center items-center gap-8 relative"
+          className="flex justify-center items-center gap-8 relative overflow-hidden"
           style={{
             padding: "56px 324px",
             backgroundColor: "#9BDCAE"
