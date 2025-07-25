@@ -212,7 +212,7 @@ export default function Index() {
               {/* Left - Image with decorative elements */}
               <div className="relative flex-shrink-0">
                 {/* Yellow decorative square */}
-                <div className="absolute -left-5 -top-20 w-78 h-78 bg-wastex-icon-bg rounded-2xl mix-blend-multiply"></div>
+                <div className="absolute -left-5 -top-20 w-80 h-80 bg-wastex-icon-bg rounded-2xl mix-blend-multiply"></div>
 
                 {/* Main dashboard image */}
                 <div className="relative">
