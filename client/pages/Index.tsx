@@ -256,7 +256,7 @@ export default function Index() {
 
               {/* BIOWASTE Card */}
               <div className="bg-wastex-card-bg rounded-lg p-4 flex flex-col gap-4">
-                <div className="w-19 h-19 bg-wastex-primary rounded-full flex items-center justify-center">
+                <div className="w-20 h-20 bg-wastex-primary rounded-full flex items-center justify-center">
                   {/* Biowaste icon placeholder - will be styled properly */}
                 </div>
                 <div className="flex flex-col gap-2">
