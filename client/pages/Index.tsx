@@ -204,88 +204,111 @@ export default function Index() {
         {/* Popular waste items Section */}
         <WasteItemsCarousel />
 
-        {/* Features Section */}
-        <section className="py-20 bg-white">
-          <div className="container mx-auto px-4">
-            <h2 className="text-4xl font-bold text-wastex-text text-center mb-16">
-              Why Choose WasteX?
-            </h2>
-            <div className="grid md:grid-cols-3 gap-8">
-              <div className="text-center p-8 rounded-2xl bg-wastex-surface border border-wastex-border">
-                <div className="w-16 h-16 bg-wastex-primary rounded-full flex items-center justify-center mx-auto mb-6">
-                  <svg
-                    className="w-8 h-8 text-wastex-text"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M13 10V3L4 14h7v7l9-11h-7z"
-                    />
-                  </svg>
+        {/* Dashboard Section */}
+        <section className="relative py-20 lg:py-32 bg-white">
+          <div className="container mx-auto px-4 md:px-16 lg:px-20">
+            {/* Top - Image and Text */}
+            <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-12 mb-12">
+              {/* Left - Image with decorative elements */}
+              <div className="relative flex-shrink-0">
+                {/* Yellow decorative square */}
+                <div className="absolute -left-5 -top-20 w-78 h-78 bg-wastex-icon-bg rounded-2xl mix-blend-multiply"></div>
+
+                {/* Main dashboard image */}
+                <div className="relative">
+                  <img
+                    src="https://api.builder.io/api/v1/image/assets/TEMP/13ba8f34a8878ff77e762e9399041f32b34cd3c9?width=1296"
+                    alt="WasteX Dashboard Interface"
+                    className="w-full max-w-2xl h-auto rounded-lg shadow-lg"
+                  />
                 </div>
-                <h3 className="text-2xl font-bold text-wastex-text mb-4">
-                  Efficient Matching
-                </h3>
-                <p className="text-wastex-text/80 leading-relaxed">
-                  Our AI-powered platform connects waste producers with the
-                  right buyers instantly, reducing waste and maximizing value.
-                </p>
               </div>
 
-              <div className="text-center p-8 rounded-2xl bg-wastex-surface border border-wastex-border">
-                <div className="w-16 h-16 bg-wastex-secondary rounded-full flex items-center justify-center mx-auto mb-6">
-                  <svg
-                    className="w-8 h-8 text-white"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                    />
-                  </svg>
-                </div>
-                <h3 className="text-2xl font-bold text-wastex-text mb-4">
-                  Verified Quality
-                </h3>
-                <p className="text-wastex-text/80 leading-relaxed">
-                  All materials are quality-checked and certified, ensuring
-                  buyers receive exactly what they expect every time.
-                </p>
-              </div>
-
-              <div className="text-center p-8 rounded-2xl bg-wastex-surface border border-wastex-border">
-                <div className="w-16 h-16 bg-wastex-primary rounded-full flex items-center justify-center mx-auto mb-6">
-                  <svg
-                    className="w-8 h-8 text-wastex-text"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064"
-                    />
-                  </svg>
-                </div>
-                <h3 className="text-2xl font-bold text-wastex-text mb-4">
-                  Global Impact
-                </h3>
-                <p className="text-wastex-text/80 leading-relaxed">
-                  Join a worldwide movement towards sustainability and help
-                  create a circular economy that benefits everyone.
+              {/* Right - Text Content */}
+              <div className="flex flex-col items-start gap-6 max-w-xl">
+                <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-wastex-text leading-tight tracking-wider">
+                  Your dashboard:<br />
+                  Stay organized, anytime, anywhere
+                </h2>
+                <p className="text-wastex-text text-base leading-relaxed tracking-wide">
+                  With WasteX, managing your waste jobs is effortless. Our intuitive Dashboard gives you complete visibility and control over your completed jobs, all from the convenience of your mobile or web device.
                 </p>
               </div>
             </div>
+
+            {/* Bottom - Feature Cards */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+              {/* Feature Card 1 */}
+              <div className="flex items-start gap-3 p-4 rounded-lg bg-gray-100 bg-opacity-20">
+                <div className="flex w-8 h-8 items-center justify-center rounded-full bg-wastex-icon-bg flex-shrink-0">
+                  <svg className="w-6 h-6" viewBox="0 0 24 25" fill="none">
+                    <path d="M20 6.69995L9 17.7L4 12.7" stroke="#0F2415" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                </div>
+                <div className="flex flex-col gap-3">
+                  <h3 className="text-wastex-text text-base font-bold leading-relaxed tracking-wider">
+                    Job history at a glance
+                  </h3>
+                  <p className="text-wastex-text text-sm leading-relaxed tracking-wide">
+                    Easily view and manage all your completed jobs.
+                  </p>
+                </div>
+              </div>
+
+              {/* Feature Card 2 */}
+              <div className="flex items-start gap-3 p-4 rounded-lg bg-gray-100 bg-opacity-20">
+                <div className="flex w-8 h-8 items-center justify-center rounded-full bg-wastex-icon-bg flex-shrink-0">
+                  <svg className="w-6 h-6" viewBox="0 0 24 25" fill="none">
+                    <path d="M20 6.69995L9 17.7L4 12.7" stroke="#0F2415" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                </div>
+                <div className="flex flex-col gap-3">
+                  <h3 className="text-wastex-text text-base font-bold leading-relaxed tracking-wider">
+                    Job history at a glance
+                  </h3>
+                  <p className="text-wastex-text text-sm leading-relaxed tracking-wide">
+                    Easily view and manage all your completed jobs.
+                  </p>
+                </div>
+              </div>
+
+              {/* Feature Card 3 */}
+              <div className="flex items-start gap-3 p-4 rounded-lg bg-gray-100 bg-opacity-20">
+                <div className="flex w-8 h-8 items-center justify-center rounded-full bg-wastex-icon-bg flex-shrink-0">
+                  <svg className="w-6 h-6" viewBox="0 0 24 25" fill="none">
+                    <path d="M20 6.69995L9 17.7L4 12.7" stroke="#0F2415" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                </div>
+                <div className="flex flex-col gap-3">
+                  <h3 className="text-wastex-text text-base font-bold leading-relaxed tracking-wider">
+                    Job history at a glance
+                  </h3>
+                  <p className="text-wastex-text text-sm leading-relaxed tracking-wide">
+                    Easily view and manage all your completed jobs.
+                  </p>
+                </div>
+              </div>
+
+              {/* Feature Card 4 */}
+              <div className="flex items-start gap-3 p-4 rounded-lg bg-gray-100 bg-opacity-20">
+                <div className="flex w-8 h-8 items-center justify-center rounded-full bg-wastex-icon-bg flex-shrink-0">
+                  <svg className="w-6 h-6" viewBox="0 0 24 25" fill="none">
+                    <path d="M20 6.69995L9 17.7L4 12.7" stroke="#0F2415" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                </div>
+                <div className="flex flex-col gap-3">
+                  <h3 className="text-wastex-text text-base font-bold leading-relaxed tracking-wider">
+                    Job history at a glance
+                  </h3>
+                  <p className="text-wastex-text text-sm leading-relaxed tracking-wide">
+                    Easily view and manage all your completed jobs.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Purple decorative square */}
+            <div className="absolute bottom-8 right-16 w-30 h-30 bg-purple-300 rounded-2xl mix-blend-multiply hidden lg:block"></div>
           </div>
         </section>
 
