@@ -1,58 +1,69 @@
-import Navigation from "@/components/Navigation";
 import { Link } from "react-router-dom";
-import Footer from "@/components/Footer";
 import FaqAccordion from "@/components/FaqAccordion";
 import WasteItemsCarousel from "@/components/WasteItemsCarousel";
 
 export default function Index() {
   return (
-    <>
-      <Navigation />
-      <div className="min-h-screen">
-        {/* Hero Section */}
-        <section className="relative w-full">
-          {/* Background Image */}
+    <div className="min-h-screen">
+      {/* Hero Section */}
+      <section className="relative w-full">
+        {/* --- DESKTOP HERO (Visible on 900px and up) --- */}
+        <div className="max-[899px]:hidden">
           <img
-            src="https://api.builder.io/api/v1/image/assets/TEMP/ad5ee4a48e9eab4b4a064640b9ac6fa99f8160f7?width=2880"
+            src="/images/image-5.png"
             alt="WasteX team member in uniform"
             className="w-full h-auto rounded-b-3xl"
           />
-
-          {/* Content */}
-          <div className="absolute inset-0 z-10 flex flex-col items-start gap-8 sm:gap-12 px-4 sm:px-8 md:px-16 lg:px-20 pt-16 sm:pt-20 max-w-5xl">
-            {/* Location Section */}
-            <div className="flex items-start gap-2 sm:gap-3">
-              <svg
-                className="w-6 h-6 sm:w-8 sm:h-8 mt-1 flex-shrink-0"
-                viewBox="0 0 32 32"
-                fill="none"
-              >
-                <path
-                  d="M16 2C12.13 2 9 5.13 9 9c0 5.25 7 19 7 19s7-13.75 7-19c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
-                  fill="#F5F5F5"
-                />
-              </svg>
-              <p className="text-wastex-hero-text text-sm sm:text-lg md:text-xl lg:text-2xl font-medium uppercase tracking-wider leading-6 sm:leading-8">
+          {/* Base styles for 900-950px. Then min-[951px], min-[1101px], min-[1351px] for wider screens. */}
+          <div className="absolute inset-0 z-10 flex flex-col items-start gap-6 p-8 max-w-sm min-[951px]:max-w-lg min-[1101px]:max-w-2xl min-[1351px]:max-w-5xl min-[1101px]:p-12 min-[1351px]:p-20 min-[1101px]:gap-8 min-[1351px]:gap-12">
+            <div className="flex items-center gap-3">
+              <img
+                src="/images/marker-pin.svg"
+                alt="Marker pin"
+                className="w-8 h-8 flex-shrink-0"
+              />
+              <p className="text-wastex-hero-text text-xs min-[951px]:text-lg min-[1101px]:text-xl min-[1351px]:text-2xl font-medium uppercase tracking-wider">
                 Trinidad & Tobago waste Removal and Disposal
               </p>
             </div>
-
-            {/* Main Headline */}
-            <h1 className="text-wastex-hero-text text-4xl sm:text-5xl md:text-6xl xl:text-7xl font-bold leading-tight sm:leading-[60px] md:leading-[80px] tracking-wider max-w-[844px]">
+            <h1 className="text-wastex-hero-text text-lg min-[951px]:text-3xl min-[1101px]:text-5xl min-[1351px]:text-7xl font-bold leading-tight tracking-wider">
               Connecting waste producers and buyers.
             </h1>
-
-            {/* Subtext */}
-            <p className="text-wastex-hero-text text-lg sm:text-xl md:text-2xl lg:text-3xl font-medium tracking-wider leading-relaxed">
+            <p className="text-wastex-hero-text text-sm min-[951px]:text-xl min-[1101px]:text-2xl min-[1351px]:text-3xl font-medium tracking-wider">
               Join WasteX for FREE—your first job is on us!
             </p>
-
-            {/* CTA Button */}
-            <button className="bg-wastex-primary text-wastex-text px-6 sm:px-8 py-3 sm:py-4 rounded-full text-lg sm:text-xl md:text-2xl font-bold tracking-wider hover:bg-wastex-primary/90 transition-colors shadow-lg">
+            <button className="bg-wastex-primary text-wastex-text px-8 py-4 rounded-full text-xs min-[951px]:text-lg min-[1101px]:text-xl min-[1351px]:text-2xl font-bold tracking-wider">
               Get started
             </button>
           </div>
-        </section>
+        </div>
+
+        {/* --- MOBILE/TABLET HERO (Visible on 899px and down) --- */}
+        <div className="min-[900px]:hidden relative">
+          <img
+            src="/images/image-30.png"
+            alt="Background"
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 flex flex-col justify-center p-6 min-[490px]:p-10 gap-4 min-[490px]:gap-6">
+            <div className="flex items-center gap-2 text-white">
+              <img src="/images/marker-pin.svg" alt="Location" className="w-5 h-5 min-[490px]:w-7 min-[490px]:h-7"/>
+              <span className="font-semibold text-sm min-[490px]:text-base tracking-wider">
+                TRINIDAD & TOBAGO
+              </span>
+            </div>
+            <h1 className="text-4xl min-[490px]:text-6xl font-bold text-white leading-tight">
+              Connecting waste producers and buyers.
+            </h1>
+            <p className="text-lg min-[490px]:text-2xl text-white">
+              Join WasteX for <span className="font-bold">FREE</span>—your first job is on us!
+            </p>
+            <button className="bg-wastex-primary text-black px-6 min-[490px]:px-8 py-3 min-[490px]:py-4 rounded-full text-lg min-[490px]:text-xl font-bold tracking-wider mt-2 self-start">
+              Get started
+            </button>
+          </div>
+        </div>
+      </section>
 
         {/* Welcome Section */}
         <section className="relative">
@@ -71,16 +82,21 @@ export default function Index() {
 
           {/* Full-width Background Image */}
           <img
-            src="https://api.builder.io/api/v1/image/assets/TEMP/ed360c2001bd10617c4ce9d7a181863284241844?width=2880"
+            src="/images/image-6.png"
             alt="WasteX application interface demonstration"
-            className="w-full h-auto"
+            className="w-full h-auto hidden min-[491px]:block"
+          />
+          <img
+            src="/images/image-31.png"
+            alt="How WasteX works on mobile"
+            className="w-full h-auto block min-[491px]:hidden"
           />
         </section>
 
         {/* How it works Section */}
-        <section className="flex flex-col lg:flex-row justify-center items-center gap-8 lg:gap-8 py-20 lg:py-32 px-4 md:px-16 lg:px-20">
+        <section className="flex flex-col min-[1200px]:flex-row justify-center items-center gap-[32px] py-20 lg:py-24 xl:py-32 px-4 md:px-16 lg:px-12 xl:px-20">
           {/* Left Content */}
-          <div className="flex flex-col items-start gap-6 max-w-lg lg:max-w-xl">
+          <div className="flex flex-col items-center min-[1200px]:items-start text-center min-[1200px]:text-left gap-6 max-w-lg">
             {/* Title */}
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-wastex-text leading-tight tracking-wider">
               How it works?
@@ -175,16 +191,13 @@ export default function Index() {
             </p>
 
             {/* Buttons */}
-            <div className="flex flex-col sm:flex-row gap-6 sm:gap-6">
-              <Link
-                to="/producer"
-                className="px-6 py-3 bg-wastex-primary text-wastex-text font-bold text-lg rounded-full hover:bg-wastex-primary/90 transition-colors tracking-wider"
-              >
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 w-full">
+              <button className="bg-wastex-primary text-wastex-text px-8 py-3 rounded-full text-lg font-bold w-full sm:w-auto hover:bg-wastex-primary/90 transition-colors">
                 See producer
-              </Link>
+              </button>
               <Link
                 to="/buyer"
-                className="px-6 py-3 bg-wastex-secondary text-white font-bold text-lg rounded-full hover:bg-wastex-secondary/90 transition-colors tracking-wider"
+                className="px-6 py-3 bg-wastex-secondary text-white font-bold text-lg rounded-full hover:bg-wastex-secondary/90 transition-colors tracking-wider w-full sm:w-auto text-center"
               >
                 See buyer
               </Link>
@@ -193,11 +206,13 @@ export default function Index() {
 
           {/* Right Image */}
           <div className="flex-shrink-0">
-            <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/91d1e51f6a42b1e128b1b093162d9da9f53b8667?width=1446"
-              alt="WasteX map interface showing job tracking"
-              className="w-full max-w-md lg:max-w-lg xl:max-w-xl rounded-lg shadow-lg"
-            />
+            <div className="relative w-full lg:w-auto">
+              <img
+                src="/images/image-8.png"
+                alt="WasteX dashboard on a map"
+                className="w-full h-auto"
+              />
+            </div>
           </div>
         </section>
 
@@ -211,13 +226,10 @@ export default function Index() {
             <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-12 mb-12">
               {/* Left - Image with decorative elements */}
               <div className="relative flex-shrink-0">
-                {/* Yellow decorative square */}
-                <div className="absolute -left-5 -top-20 w-80 h-80 bg-wastex-icon-bg rounded-2xl mix-blend-multiply"></div>
-
                 {/* Main dashboard image */}
                 <div className="relative">
                   <img
-                    src="https://api.builder.io/api/v1/image/assets/TEMP/13ba8f34a8878ff77e762e9399041f32b34cd3c9?width=1296"
+                    src="/images/image-7.png"
                     alt="WasteX Dashboard Interface"
                     className="w-full max-w-2xl h-auto"
                   />
@@ -351,10 +363,6 @@ export default function Index() {
 
         {/* CTA Section */}
         <FaqAccordion />
-
-        {/* Footer */}
-        <Footer />
-      </div>
-    </>
+    </div>
   );
 }

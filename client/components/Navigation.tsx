@@ -1,8 +1,10 @@
 import { Link, useLocation } from "react-router-dom";
 import { cn } from "@/lib/utils";
+import { useState } from "react";
 
 const Navigation = () => {
   const location = useLocation();
+  const [menuOpen, setMenuOpen] = useState(false);
 
   const navLinks = [
     { label: "Home", path: "/" },
@@ -11,37 +13,32 @@ const Navigation = () => {
     { label: "About us", path: "/about" },
   ];
 
-  const isActive = (path: string) => {
-    return location.pathname === path;
-  };
+  const isActive = (path: string) => location.pathname === path;
 
   return (
     <nav className="w-full border-b border-wastex-border bg-white">
-      <div className="mx-auto px-16 lg:px-16 md:px-8 sm:px-4">
-        <div className="flex items-center justify-between h-20">
-          {/* Left Side - Logo and Navigation Links */}
+      <div className="mx-auto px-4 sm:px-8 lg:px-16">
+        {/* --- DESKTOP NAVIGATION (Visible on lg and up) --- */}
+        <div className="hidden lg:flex items-center justify-between h-20">
+          {/* Left Side: Desktop Logo + Nav Links */}
           <div className="flex items-center gap-14">
-            {/* Logo */}
-            <div className="flex items-center">
+            <a href="/" className="flex items-center gap-4 flex-shrink-0">
               <img
-                src="https://api.builder.io/api/v1/image/assets/TEMP/fca5f3e157cf214b51b8bcc837d1189326250c90?width=306"
+                src="/images/image-21.png"
                 alt="WasteX Logo"
-                className="h-12 w-auto"
+                className="h-10 w-auto"
               />
-            </div>
-
-            {/* Navigation Links */}
-            <div className="hidden lg:flex items-center gap-4">
+            </a>
+            <div className="flex items-center gap-4">
               {navLinks.map((link) => (
                 <Link
                   key={link.path}
                   to={link.path}
                   className={cn(
-                    "px-2 py-3 rounded-full font-inter text-base transition-colors",
-                    "hover:bg-black/5",
+                    "px-2 py-3 font-inter text-base transition-colors text-center w-24",
                     isActive(link.path)
                       ? "font-bold text-wastex-secondary tracking-[0.75px]"
-                      : "font-normal text-wastex-text tracking-[0.75px]"
+                      : "font-normal text-wastex-text tracking-[0.75px] hover:text-gray-500"
                   )}
                 >
                   {link.label}
@@ -49,55 +46,87 @@ const Navigation = () => {
               ))}
             </div>
           </div>
-
-          {/* Right Side - Action Buttons */}
+          {/* Right Side: Desktop Action Buttons */}
           <div className="flex items-center gap-4">
-            <button className="hidden sm:flex items-center justify-center px-6 py-2 rounded-full border-2 border-wastex-secondary text-wastex-secondary font-bold text-lg tracking-[1px] hover:bg-wastex-secondary hover:text-white transition-colors">
+            <button className="flex items-center justify-center px-6 py-2 rounded-full border-2 border-wastex-secondary text-wastex-secondary font-bold text-lg tracking-[1px] hover:bg-wastex-secondary hover:text-white transition-colors">
               Log in
             </button>
             <button className="flex items-center justify-center px-6 py-2 rounded-full bg-wastex-primary text-wastex-text font-bold text-lg tracking-[1px] hover:bg-wastex-primary/90 transition-colors">
               Sign up
             </button>
           </div>
-
-          {/* Mobile Menu Button */}
-          <div className="lg:hidden">
-            <button className="p-2 rounded-md text-wastex-text hover:bg-black/5">
-              <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-              </svg>
-            </button>
-          </div>
         </div>
 
-        {/* Mobile Navigation Menu */}
-        <div className="lg:hidden border-t border-wastex-border bg-wastex-surface">
-          <div className="py-4 space-y-2">
+        {/* --- MOBILE NAVIGATION (Hidden on lg and up) --- */}
+        <div className="lg:hidden flex items-center justify-between h-20">
+          {/* Mobile Logo (Icon Only) */}
+          <a href="/" className="flex-shrink-0">
+            <img
+              src="/images/image-29.png"
+              alt="WasteX Logo"
+              className="h-10 w-auto"
+            />
+          </a>
+          {/* Mobile Burger Button */}
+          <button
+            onClick={() => setMenuOpen(!menuOpen)}
+            className="relative h-8 w-8"
+            aria-label="Toggle menu"
+          >
+            <div
+              className={cn(
+                "absolute top-1/2 left-1/2 w-7 h-0.5 bg-gray-800 transform -translate-x-1/2 -translate-y-1/2 transition-all duration-300",
+                menuOpen ? "rotate-45" : "-translate-y-2"
+              )}
+            ></div>
+            <div
+              className={cn(
+                "absolute top-1/2 left-1/2 w-7 h-0.5 bg-gray-800 transform -translate-x-1/2 -translate-y-1/2 transition-opacity duration-300",
+                menuOpen ? "opacity-0" : "opacity-100"
+              )}
+            ></div>
+            <div
+              className={cn(
+                "absolute top-1/2 left-1/2 w-7 h-0.5 bg-gray-800 transform -translate-x-1/2 -translate-y-1/2 transition-all duration-300",
+                menuOpen ? "-rotate-45" : "translate-y-2"
+              )}
+            ></div>
+          </button>
+        </div>
+      </div>
+
+      {/* --- MOBILE FLYOUT MENU --- */}
+      {menuOpen && (
+        <div className="lg:hidden border-t border-gray-200">
+          <div className="pt-2 pb-3 space-y-1 px-2">
             {navLinks.map((link) => (
               <Link
                 key={link.path}
                 to={link.path}
+                onClick={() => setMenuOpen(false)}
                 className={cn(
-                  "block px-4 py-2 rounded-md font-inter text-base transition-colors",
+                  "block px-3 py-2 rounded-md text-base font-medium",
                   isActive(link.path)
-                    ? "font-bold text-wastex-secondary bg-wastex-secondary/10"
-                    : "font-normal text-wastex-text hover:bg-black/5"
+                    ? "text-wastex-secondary bg-wastex-secondary/10"
+                    : "text-gray-700 hover:text-gray-900 hover:bg-gray-50"
                 )}
               >
                 {link.label}
               </Link>
             ))}
-            <div className="pt-4 space-y-3 border-t border-wastex-border">
+          </div>
+          <div className="pt-4 pb-3 border-t border-gray-200">
+            <div className="flex flex-col gap-3 px-4">
               <button className="w-full px-6 py-2 rounded-full border-2 border-wastex-secondary text-wastex-secondary font-bold text-lg tracking-[1px] hover:bg-wastex-secondary hover:text-white transition-colors">
                 Log in
               </button>
-              <button className="w-full px-6 py-2 rounded-full bg-wastex-primary text-wastex-text font-bold text-lg tracking-[1px] hover:bg-wastex-primary/90 transition-colors">
+              <button className="w-full px-6 py-2 rounded-full bg-wastex-primary text-wastex-text font-bold text-lg tracking-wider hover:bg-wastex-primary/90 transition-colors">
                 Sign up
               </button>
             </div>
           </div>
         </div>
-      </div>
+      )}
     </nav>
   );
 };

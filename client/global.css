@@ -18,7 +18,7 @@
     --popover: 0 0% 100%;
     --popover-foreground: 0 0% 14.9%;
 
-    --primary: 74 82% 52%; /* #CBDB2A - WasteX primary green-yellow */
+    --primary: 68 76% 51%; /* #CBDB2A - WasteX primary green-yellow */
     --primary-foreground: 0 0% 14.9%; /* #262626 - stays black */
 
     --secondary: 142 50% 28%; /* #275D37 - WasteX dark green */
@@ -40,7 +40,7 @@
     --radius: 0.5rem;
 
     /* WasteX brand specific colors */
-    --wastex-primary: 74 82% 52%; /* #CBDB2A */
+    --wastex-primary: 68 76% 51%; /* #CBDB2A */
     --wastex-secondary: 142 50% 28%; /* #275D37 */
     --wastex-surface: 0 0% 96.1%; /* #F5F5F5 */
     --wastex-text: 0 0% 14.9%; /* #262626 */

@@ -1,29 +1,83 @@
-import Navigation from "@/components/Navigation";
-
 export default function About() {
   return (
-    <>
-      <Navigation />
-      <div className="min-h-screen">
-        {/* Contact us Section */}
+    <div className="min-h-screen">
+      {/* Hero Section */}
+      <section
+          className="py-16 px-4 md:px-16 lg:px-20 bg-gray-100 flex items-center justify-center min-h-[539px] max-w-8xl mx-auto"
+        >
+          <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16 w-full">
+            {/* Left Content */}
+            <div className="flex flex-col items-start gap-8 max-w-6xl w-full text-center lg:text-left">
+              <div className="flex flex-col gap-4 w-full">
+                <h3 className="text-wastex-secondary text-2xl font-bold uppercase tracking-wider">
+                  ABOUT US
+                </h3>
+                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-black leading-tight tracking-wider w-full">
+                  Connecting waste for a sustainable future.
+                </h1>
+                <p className="text-xl text-black leading-relaxed tracking-wide">
+                  Lorem iposum
+                </p>
+              </div>
+            </div>
+
+            {/* Right Image */}
+            <div className="relative flex-shrink-0">
+              {/* Purple decorative square */}
+              <div className="absolute -left-8 -top-8 w-26 h-26 bg-purple-300 rounded-2xl"></div>
+              <img
+                src="/images/image-26.png"
+                alt="Waste management professionals"
+                className="w-full max-w-2xl h-auto rounded-2xl relative z-10"
+              />
+            </div>
+          </div>
+        </section>
+
+        {/* Mission Statement Section */}
+        <section className="bg-white py-20 px-4 md:px-16 lg:px-20">
+          <div className="max-w-4xl mx-auto text-left space-y-6">
+            <p className="text-lg text-gray-700 leading-relaxed">
+              At WasteX, we believe that waste is not just a problem—it's an opportunity. Our
+              mission is to create a more sustainable world by simplifying waste management
+              through innovative technology and collaborative solutions.
+            </p>
+            <p className="text-lg text-gray-700 leading-relaxed">
+              We provide a platform where producers and buyers of waste can easily connect, trade, and reuse
+              materials, contributing to a circular economy and a cleaner environment.
+            </p>
+            <p className="text-lg text-gray-700 leading-relaxed">
+              By fostering a marketplace for waste, we enable businesses and individuals to turn what was once
+              considered waste into valuable resources. Whether you're looking to dispose of materials
+              responsibly, find reusable waste, or reduce your carbon footprint, WasteX offers a seamless,
+              transparent, and efficient solution.
+            </p>
+            <p className="text-lg text-gray-700 leading-relaxed">
+              Our vision is to lead the charge in transforming waste management practices globally, making
+              sustainability more accessible and practical for everyone. With WasteX, sustainability is no longer
+              a challenge—it's a simple, actionable reality. Join us in reshaping the future of waste. Together, we
+              can reduce waste, promote reuse, and boost environmental responsibility.
+            </p>
+          </div>
+        </section>
+
+        {/* Contact Us Section */}
         <section
-          className="py-16 px-4 md:px-16 lg:px-36"
+          className="py-20 px-4 md:px-16 lg:px-20"
           style={{ backgroundColor: "rgba(194, 198, 196, 0.20)" }}
         >
-          <div className="flex flex-col lg:flex-row items-center gap-12">
+          <div className="flex flex-col lg:flex-row items-center justify-center gap-16 max-w-7xl mx-auto">
             {/* Left Image */}
             <div className="relative flex-shrink-0">
-              {/* Light Green decorative square */}
-              <div className="absolute -left-8 -top-8 w-26 h-26 bg-green-200 rounded-2xl"></div>
               <img
-                src="https://api.builder.io/api/v1/image/assets/TEMP/4baf6be7630688b03c2d0ed7b4b642ba640bc556?width=1197"
+                src="/images/image-27.png"
                 alt="Customer service representative"
-                className="w-full max-w-lg h-auto rounded-2xl relative z-10"
+                className="w-full max-w-[900px] h-auto rounded-2xl relative z-10"
               />
             </div>
 
             {/* Right Content */}
-            <div className="flex flex-col items-start gap-8 max-w-lg">
+            <div className="flex flex-col items-start gap-8 max-w-lg w-full">
               <h2 className="text-2xl font-bold text-black tracking-wider">
                 Contact us
               </h2>
@@ -80,192 +134,43 @@ export default function About() {
           </div>
         </section>
 
-        {/* Get Started Section */}
-        <section
-          className="flex justify-center items-center gap-8 relative overflow-hidden"
-          style={{
-            padding: "56px 324px",
-            backgroundColor: "#9BDCAE",
-          }}
-        >
-          {/* Left Image with Profile Complex Layout */}
-          <div
-            className="flex items-center relative flex-shrink-0"
-            style={{
-              height: "188px",
-              paddingRight: "26.5px",
-            }}
-          >
-            {/* Background container */}
-            <div
-              className="absolute"
-              style={{
-                width: "608px",
-                height: "299px",
-                left: "-300px",
-                top: "-56px",
-              }}
-            >
-              {/* SVG Background Circle */}
-              <svg
-                width="606"
-                height="299"
-                viewBox="0 0 606 299"
-                fill="none"
-                className="absolute"
-                style={{
-                  width: "716px",
-                  height: "716px",
-                  borderRadius: "716px",
-                  background: "#61BD7C",
-                  left: "-50px",
-                  top: "-208px",
-                }}
-              >
-                <circle cx="248" cy="150" r="358" fill="#61BD7C" />
-              </svg>
-
-              {/* Container for truck and avatar */}
-              <div
-                className="absolute"
-                style={{
-                  width: "336px",
-                  height: "183px",
-                  left: "270px",
-                  top: "61px",
-                }}
-              >
-                {/* Truck image */}
-                <img
-                  src="https://api.builder.io/api/v1/image/assets/TEMP/2ff35b133587e568e990200d85139b48daa7ddd8?width=494"
-                  alt=""
-                  className="absolute"
-                  style={{
-                    width: "247px",
-                    height: "165px",
-                    aspectRatio: "246.99/164.50",
-                    left: "89px",
-                    top: "12px",
-                  }}
-                />
-
-                {/* Avatar circle */}
-                <div
-                  className="flex flex-col justify-center items-center absolute rounded-full overflow-hidden"
-                  style={{
-                    width: "183px",
-                    height: "183px",
-                    border: "6px solid #61BD7C",
-                    left: "0px",
-                    top: "0px",
-                  }}
-                >
-                  <div
-                    className="absolute"
-                    style={{
-                      width: "183px",
-                      height: "183px",
-                      left: "0px",
-                      top: "0px",
-                    }}
-                  >
-                    <img
-                      src="https://api.builder.io/api/v1/image/assets/TEMP/74e645f36d84fdbc6def2c6c24161b3e04362606?width=530"
-                      alt=""
-                      className="absolute"
-                      style={{
-                        width: "265px",
-                        height: "302px",
-                        aspectRatio: "265/302",
-                        left: "-27px",
-                        top: "-26px",
-                      }}
-                    />
-                  </div>
-                </div>
+        {/* CTA Section */}
+        {/* Desktop version (601px and up) */}
+        <div className="hidden min-[601px]:block">
+          <section className="relative w-full">
+            <img
+              src="/images/image-33.png"
+              alt="Join WasteX"
+              className="w-full h-auto"
+            />
+            <div className="absolute inset-0 flex items-center">
+              <div className="w-[57%] ml-[43%] flex flex-col items-start gap-6 px-4 sm:px-8 md:px-12">
+                <p className="font-medium leading-snug text-black text-xs min-[700px]:text-sm min-[800px]:text-base min-[900px]:text-lg min-[1000px]:text-xl min-[1200px]:text-2xl min-[1400px]:text-3xl min-[1500px]:text-4xl text-left">
+                  Join WasteX for <span className="font-bold">FREE</span> and enjoy
+                  your first job on us! Simplify your waste management today!
+                </p>
+                <button className="bg-wastex-secondary text-white px-6 py-3 rounded-full text-xs min-[1000px]:text-sm min-[1200px]:text-base min-[1400px]:text-lg min-[1500px]:text-xl font-bold tracking-wider hover:bg-wastex-secondary/90 transition-colors w-fit flex-shrink-0">
+                  Get started
+                </button>
               </div>
             </div>
-          </div>
+          </section>
+        </div>
 
-          {/* Right Content */}
-          <div
-            className="flex flex-col justify-center items-start gap-8 relative ml-8"
-            style={{ width: "529px" }}
-          >
-            <div
-              className="relative"
-              style={{
-                width: "500px",
-                color: "#1A1A1A",
-                fontFamily: "Inter",
-                fontSize: "24px",
-                fontStyle: "normal",
-                fontWeight: "600",
-                lineHeight: "normal",
-              }}
-            >
-              <span
-                style={{
-                  fontFamily:
-                    "Inter, -apple-system, Roboto, Helvetica, sans-serif",
-                  fontWeight: "400",
-                  fontSize: "24px",
-                  color: "rgba(26,26,26,1)",
-                }}
-              >
-                Join WasteX for{" "}
-              </span>
-              <span
-                style={{
-                  fontFamily:
-                    "Inter, -apple-system, Roboto, Helvetica, sans-serif",
-                  fontWeight: "700",
-                  fontSize: "24px",
-                  color: "rgba(26,26,26,1)",
-                }}
-              >
-                FREE
-              </span>
-              <span
-                style={{
-                  fontFamily:
-                    "Inter, -apple-system, Roboto, Helvetica, sans-serif",
-                  fontWeight: "400",
-                  fontSize: "24px",
-                  color: "rgba(26,26,26,1)",
-                }}
-              >
-                {" "}
-                and enjoy your first job on us! Simplify your waste management
-                today!
-              </span>
-            </div>
-
-            <div
-              className="flex justify-center items-center gap-2 relative rounded-full"
-              style={{
-                padding: "12px 24px",
-                background: "#275D37",
-              }}
-            >
-              <div
-                className="relative"
-                style={{
-                  fontFamily: "'Automate OT'",
-                  fontWeight: "400",
-                  fontSize: "20px",
-                  color: "#F5F5F5",
-                  fontStyle: "normal",
-                  lineHeight: "32px",
-                  letterSpacing: "1px",
-                }}
-              >
+        {/* Mobile/Tablet version (0px to 600px) */}
+        <div className="min-[601px]:hidden">
+          <section style={{ backgroundColor: "#A4D0B4" }} className="w-full overflow-hidden">
+            <img src="/images/image-32.png" alt="Join WasteX" className="w-full h-auto" />
+            <div className="flex flex-col justify-center items-center text-center flex-1 px-8 py-10 h-full">
+              <p className="text-3xl text-black font-medium leading-snug max-w-4xl">
+                Join WasteX for <span className="font-bold">FREE</span> and enjoy your first job on us! Simplify your waste management today!
+              </p>
+              <button className="mt-8 bg-wastex-secondary text-white px-8 py-4 rounded-full text-xl font-bold tracking-wider hover:opacity-90 transition-opacity w-fit">
                 Get started
-              </div>
+              </button>
             </div>
-          </div>
-        </section>
-      </div>
-    </>
+          </section>
+        </div>
+    </div>
   );
 }

@@ -9,37 +9,44 @@ const faqData = [
   {
     question: "Who can use WasteX?",
     answer:
-      "WasteX is designed for a wide range of users, including industrial facilities, commercial businesses, municipalities, and recycling centers. Our platform is flexible and can be adapted to meet the specific needs of any organization that generates or manages waste.",
+      "WasteX is designed for businesses of all sizes, from small enterprises to large corporations, that produce or can utilize waste materials. This includes manufacturers, construction companies, retailers, and recycling facilities.",
   },
   {
     question: "Is WasteX available only in Trinidad & Tobago?",
     answer:
-      "Currently, our services are exclusively available in Trinidad & Tobago. We are focused on perfecting our operations locally but have plans for expansion to other regions in the near future as we grow.",
+      "Currently, our services are focused on Trinidad & Tobago, but we have plans to expand to other regions in the future. Stay tuned for updates!",
   },
   {
     question: "How much does it cost to use WasteX?",
     answer:
-      "We offer a variety of pricing plans tailored to the scale and needs of your operations. This includes pay-per-use options for smaller businesses and comprehensive subscription plans for larger enterprises. Contact us for a detailed quote.",
+      "Joining WasteX is free! We believe in making sustainability accessible. Your first job, whether you're a producer or a buyer, is on us. Subsequent transactions may have a small service fee.",
   },
   {
-    question: "What if there’s an issue with a job?",
+    question: "What if there's an issue with a job?",
     answer:
-      "Our dedicated support team is available 24/7 to assist with any issues. You can report a problem directly through the app, and our team will work swiftly to resolve it, ensuring minimal disruption to your services.",
+      "Our dedicated support team is here to help. You can report any issues through the platform, and we'll work with all parties to find a swift and fair resolution.",
   },
 ];
 
 const FaqAccordion = () => {
   return (
-    <section className="bg-white py-20">
-      <div className="container mx-auto max-w-4xl bg-[#F3F4F6] p-10 rounded-lg">
+    <section className="bg-white py-10">
+      <div
+        className="container mx-auto max-w-4xl p-10 rounded-lg"
+        style={{ backgroundColor: "rgba(194, 198, 196, 0.20)" }}
+      >
         <h2 className="text-4xl font-bold text-center text-gray-800 mb-10">
           You've got questions. We've got answers
         </h2>
         <Accordion type="single" collapsible className="w-full">
-          {faqData.map((item, index) => (
-            <AccordionItem value={`item-${index + 1}`} key={index}>
-              <AccordionTrigger>{item.question}</AccordionTrigger>
-              <AccordionContent>{item.answer}</AccordionContent>
+          {faqData.map((faq, index) => (
+            <AccordionItem value={`item-${index}`} key={index} className="border-b">
+              <AccordionTrigger className="text-left hover:no-underline font-semibold text-base sm:text-lg">
+                {faq.question}
+              </AccordionTrigger>
+              <AccordionContent className="text-base text-gray-600">
+                {faq.answer}
+              </AccordionContent>
             </AccordionItem>
           ))}
         </Accordion>
