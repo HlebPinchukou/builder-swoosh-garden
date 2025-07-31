@@ -1,0 +1,38 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 3867246, 2020-12-16T11:57:38-0500
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: Automate Light by T-26
+ * URL: https://www.myfonts.com/collections/t-26-foundry
+
+ * Webfont: Automate Regular by T-26
+ * URL: https://www.myfonts.com/collections/t-26-foundry
+
+ * Webfont: Automate Bold by T-26
+ * URL: https://www.myfonts.com/collections/t-26-foundry
+ 
+ * © 2025 MyFonts Inc. */
+
+
+@font-face {
+  font-family: "Automate";
+  src: url('webFonts/AutomateLight/font.woff2') format('woff2'), url('webFonts/AutomateLight/font.woff') format('woff');
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Automate";
+  src: url('webFonts/AutomateRegular/font.woff2') format('woff2'), url('webFonts/AutomateRegular/font.woff') format('woff');
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Automate";
+  src: url('webFonts/AutomateBold/font.woff2') format('woff2'), url('webFonts/AutomateBold/font.woff') format('woff');
+  font-weight: 700;
+}
+

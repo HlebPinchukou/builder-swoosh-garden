@@ -35,7 +35,7 @@ const FaqAccordion = () => {
         className="container mx-auto max-w-4xl p-10 rounded-lg"
         style={{ backgroundColor: "rgba(194, 198, 196, 0.20)" }}
       >
-        <h2 className="text-4xl font-bold text-center text-gray-800 mb-10">
+        <h2 className="text-4xl font-automate font-bold text-center text-gray-800 mb-10">
           You've got questions. We've got answers
         </h2>
         <Accordion type="single" collapsible className="w-full">

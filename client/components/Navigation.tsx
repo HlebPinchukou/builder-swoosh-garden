@@ -48,10 +48,10 @@ const Navigation = () => {
           </div>
           {/* Right Side: Desktop Action Buttons */}
           <div className="flex items-center gap-4">
-            <button className="flex items-center justify-center px-6 py-2 rounded-full border-2 border-wastex-secondary text-wastex-secondary font-bold text-lg tracking-[1px] hover:bg-wastex-secondary hover:text-white transition-colors">
+            <button className="flex items-center justify-center px-6 py-2 rounded-full border-2 border-wastex-secondary text-wastex-secondary font-automate font-normal text-lg tracking-[1px] hover:bg-wastex-secondary hover:text-white transition-colors">
               Log in
             </button>
-            <button className="flex items-center justify-center px-6 py-2 rounded-full bg-wastex-primary text-wastex-text font-bold text-lg tracking-[1px] hover:bg-wastex-primary/90 transition-colors">
+            <button className="flex items-center justify-center px-6 py-2 rounded-full bg-wastex-primary text-wastex-text font-automate font-normal text-lg tracking-[1px] hover:bg-wastex-primary/90 transition-colors">
               Sign up
             </button>
           </div>
@@ -117,10 +117,10 @@ const Navigation = () => {
           </div>
           <div className="pt-4 pb-3 border-t border-gray-200">
             <div className="flex flex-col gap-3 px-4">
-              <button className="w-full px-6 py-2 rounded-full border-2 border-wastex-secondary text-wastex-secondary font-bold text-lg tracking-[1px] hover:bg-wastex-secondary hover:text-white transition-colors">
+              <button className="w-full px-6 py-2 rounded-full border-2 border-wastex-secondary text-wastex-secondary font-automate font-normal text-lg tracking-[1px] hover:bg-wastex-secondary hover:text-white transition-colors">
                 Log in
               </button>
-              <button className="w-full px-6 py-2 rounded-full bg-wastex-primary text-wastex-text font-bold text-lg tracking-wider hover:bg-wastex-primary/90 transition-colors">
+              <button className="w-full px-6 py-2 rounded-full bg-wastex-primary text-wastex-text font-automate font-normal text-lg tracking-wider hover:bg-wastex-primary/90 transition-colors">
                 Sign up
               </button>
             </div>

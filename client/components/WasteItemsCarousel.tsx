@@ -121,7 +121,7 @@ const WasteItemsCarousel = () => {
                 />
             </div>
             <div className="container mx-auto px-4 relative">
-                <h2 className="text-4xl font-bold text-center mb-12">
+                <h2 className="text-4xl font-automate font-bold text-center mb-12">
                     Popular waste items
                 </h2>
                 {/* Mobile horizontal scroll */}
@@ -219,7 +219,7 @@ const WasteItemsCarousel = () => {
                     </div>
                 </div>
                 <div className="text-center mt-12">
-                    <button className="bg-primary text-wastex-text px-8 py-3 rounded-full text-lg font-bold hover:bg-primary/90 transition-colors">
+                    <button className="bg-primary text-wastex-text px-8 py-3 rounded-full text-lg font-automate font-normal hover:bg-primary/90 transition-colors">
                         Get started
                     </button>
                 </div>

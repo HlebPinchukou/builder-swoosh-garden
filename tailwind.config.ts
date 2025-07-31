@@ -9,13 +9,14 @@ export default {
       center: true,
       padding: "2rem",
       screens: {
+        "xxs": {"max": "366px"},
         "2xl": "1400px",
       },
     },
     extend: {
       fontFamily: {
         sans: ["Inter", "system-ui", "sans-serif"],
-        automate: ["Automate OT", "system-ui", "sans-serif"],
+        automate: ["Automate", "sans-serif"],
       },
       colors: {
         border: "hsl(var(--border))",

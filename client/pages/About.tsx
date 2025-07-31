@@ -1,18 +1,39 @@
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
+
 export default function About() {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash === '#contact-us') {
+      const el = document.getElementById('contact-us');
+      if (el) {
+        const headerOffset = 80; // height of the navbar
+        const elementPosition = el.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+      
+        window.scrollTo({
+             top: offsetPosition,
+             behavior: "smooth"
+        });
+      }
+    }
+  }, [location]);
+  
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
       <section
           className="py-16 px-4 md:px-16 lg:px-20 bg-gray-100 flex items-center justify-center min-h-[539px] max-w-8xl mx-auto"
         >
-          <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16 w-full">
+          <div className="flex flex-col lg:flex-row items-center justify-center gap-12 lg:gap-16 w-full">
             {/* Left Content */}
-            <div className="flex flex-col items-start gap-8 max-w-6xl w-full text-center lg:text-left">
+            <div className="flex flex-col items-start gap-8 max-w-3xl text-center lg:text-left">
               <div className="flex flex-col gap-4 w-full">
                 <h3 className="text-wastex-secondary text-2xl font-bold uppercase tracking-wider">
                   ABOUT US
                 </h3>
-                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-black leading-tight tracking-wider w-full">
+                <h1 className="text-4xl md:text-5xl lg:text-6xl font-automate font-bold text-black leading-tight tracking-wider w-full">
                   Connecting waste for a sustainable future.
                 </h1>
                 <p className="text-xl text-black leading-relaxed tracking-wide">
@@ -63,7 +84,8 @@ export default function About() {
 
         {/* Contact Us Section */}
         <section
-          className="py-20 px-4 md:px-16 lg:px-20"
+          id="contact-us"
+          className="py-20 px-4 md:px-16 lg:px-20 scroll-mt-20"
           style={{ backgroundColor: "rgba(194, 198, 196, 0.20)" }}
         >
           <div className="flex flex-col lg:flex-row items-center justify-center gap-16 max-w-7xl mx-auto">
@@ -78,7 +100,7 @@ export default function About() {
 
             {/* Right Content */}
             <div className="flex flex-col items-start gap-8 max-w-lg w-full">
-              <h2 className="text-2xl font-bold text-black tracking-wider">
+              <h2 className="text-2xl font-automate font-bold text-black tracking-wider">
                 Contact us
               </h2>
 
@@ -127,7 +149,7 @@ export default function About() {
                 </div>
               </div>
 
-              <button className="bg-wastex-primary text-black px-6 py-2 rounded-full text-lg font-bold tracking-wider hover:bg-wastex-primary/90 transition-colors">
+              <button className="bg-wastex-primary text-black px-6 py-2 rounded-full text-lg font-automate font-normal tracking-wider hover:bg-wastex-primary/90 transition-colors">
                 Send
               </button>
             </div>
@@ -149,7 +171,7 @@ export default function About() {
                   Join WasteX for <span className="font-bold">FREE</span> and enjoy
                   your first job on us! Simplify your waste management today!
                 </p>
-                <button className="bg-wastex-secondary text-white px-6 py-3 rounded-full text-xs min-[1000px]:text-sm min-[1200px]:text-base min-[1400px]:text-lg min-[1500px]:text-xl font-bold tracking-wider hover:bg-wastex-secondary/90 transition-colors w-fit flex-shrink-0">
+                <button className="bg-wastex-secondary text-white px-6 py-3 rounded-full text-xs min-[1000px]:text-sm min-[1200px]:text-base min-[1400px]:text-lg min-[1500px]:text-xl font-automate font-normal tracking-wider hover:bg-wastex-secondary/90 transition-colors w-fit flex-shrink-0">
                   Get started
                 </button>
               </div>
@@ -165,7 +187,7 @@ export default function About() {
               <p className="text-3xl text-black font-medium leading-snug max-w-4xl">
                 Join WasteX for <span className="font-bold">FREE</span> and enjoy your first job on us! Simplify your waste management today!
               </p>
-              <button className="mt-8 bg-wastex-secondary text-white px-8 py-4 rounded-full text-xl font-bold tracking-wider hover:opacity-90 transition-opacity w-fit">
+              <button className="mt-8 bg-wastex-secondary text-white px-8 py-4 rounded-full text-xl font-automate font-normal tracking-wider hover:opacity-90 transition-opacity w-fit">
                 Get started
               </button>
             </div>

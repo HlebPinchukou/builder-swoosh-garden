@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function Buyer() {
   return (
     <div className="min-h-screen">
@@ -12,7 +14,7 @@ export default function Buyer() {
                 <h3 className="text-wastex-secondary text-2xl font-bold uppercase tracking-wider">
                   BUYER
                 </h3>
-                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-black leading-tight tracking-wider">
+                <h1 className="text-4xl md:text-5xl lg:text-6xl font-automate font-bold text-black leading-tight tracking-wider">
                   Find valuable materials
                 </h1>
                 <p className="text-xl text-black leading-relaxed tracking-wide">
@@ -78,7 +80,7 @@ export default function Buyer() {
           <div className="flex flex-col min-[1261px]:flex-row justify-center items-center gap-8 lg:gap-16">
             {/* Left Content */}
             <div className="flex flex-col items-start gap-6 max-w-lg">
-              <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-black leading-tight tracking-wider">
+              <h2 className="text-xl md:text-2xl lg:text-3xl font-automate font-bold text-black leading-tight tracking-wider">
                 How WasteX benefits you
               </h2>
 
@@ -99,10 +101,11 @@ export default function Buyer() {
                   </div>
                   <div className="flex flex-col">
                     <h3 className="text-black text-xl font-bold leading-tight tracking-wider">
-                      Reduce disposal costs
+                      Find reliable suppliers
                     </h3>
                     <p className="text-black text-base leading-relaxed tracking-wide">
-                      Minimize landfill fees by selling or repurposing waste.
+                      Access a marketplace of producers offering various waste
+                      materials.
                     </p>
                   </div>
                 </div>
@@ -122,11 +125,10 @@ export default function Buyer() {
                   </div>
                   <div className="flex flex-col">
                     <h3 className="text-black text-xl font-bold leading-tight tracking-wider">
-                      Enhance sustainability
+                      Lower material costs
                     </h3>
                     <p className="text-black text-base leading-relaxed tracking-wide">
-                      Meet environmental goals by diverting waste from
-                      landfills.
+                      Source affordable raw materials for your operations.
                     </p>
                   </div>
                 </div>
@@ -146,10 +148,11 @@ export default function Buyer() {
                   </div>
                   <div className="flex flex-col">
                     <h3 className="text-black text-xl font-bold leading-tight tracking-wider">
-                      Generate revenue
+                      Support sustainability
                     </h3>
                     <p className="text-black text-base leading-relaxed tracking-wide">
-                      Turn byproducts into profit by finding buyers.
+                      Reduce demand for virgin materials and promote eco-friendly
+                      practices.
                     </p>
                   </div>
                 </div>
@@ -169,11 +172,10 @@ export default function Buyer() {
                   </div>
                   <div className="flex flex-col">
                     <h3 className="text-black text-xl font-bold leading-tight tracking-wider">
-                      Compliance & reporting
+                      Streamlined transactions
                     </h3>
                     <p className="text-black text-base leading-relaxed tracking-wide">
-                      Stay compliant with waste regulations and track waste
-                      diversion efforts.
+                      Connect directly with producers for efficient sourcing.
                     </p>
                   </div>
                 </div>
@@ -184,7 +186,7 @@ export default function Buyer() {
                 Join WasteX today and make waste work for you!
               </p>
 
-              <button className="bg-wastex-primary text-wastex-text px-6 py-3 rounded-full text-xl font-bold tracking-wider hover:bg-wastex-primary/90 transition-colors max-[580px]:w-full mx-auto min-[1261px]:mx-0">
+              <button className="bg-wastex-primary text-wastex-text px-6 py-3 rounded-full text-xl font-automate font-normal tracking-wider hover:bg-wastex-primary/90 transition-colors max-[580px]:w-full mx-auto min-[1261px]:mx-0">
                 Get started
               </button>
             </div>
@@ -223,7 +225,7 @@ export default function Buyer() {
                 <h3 className="text-wastex-secondary text-2xl font-bold uppercase tracking-wider">
                   PRODUCER
                 </h3>
-                <h2 className="text-black text-2xl md:text-3xl lg:text-4xl font-bold leading-tight tracking-wider">
+                <h2 className="text-black text-2xl md:text-3xl lg:text-4xl font-automate font-bold leading-tight tracking-wider">
                   Turn waste into value
                 </h2>
               </div>
@@ -235,9 +237,9 @@ export default function Buyer() {
                 waste into opportunity.
               </p>
 
-              <button className="bg-wastex-secondary text-white px-6 py-3 rounded-full text-xl font-bold tracking-wider hover:bg-wastex-secondary/90 transition-colors max-[580px]:w-full mx-auto min-[1261px]:mx-0">
+              <Link to="/producer" className="bg-wastex-secondary text-white px-6 py-3 rounded-full text-xl font-automate font-normal tracking-wider hover:bg-wastex-secondary/90 transition-colors max-[580px]:w-full mx-auto min-[1261px]:mx-0 text-center">
                 Learn more
-              </button>
+              </Link>
             </div>
           </div>
         </section>

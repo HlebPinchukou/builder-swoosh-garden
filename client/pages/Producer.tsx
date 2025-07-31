@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function Producer() {
   return (
     <div className="min-h-screen">
@@ -12,7 +14,7 @@ export default function Producer() {
                 <h3 className="text-wastex-secondary text-2xl font-bold uppercase tracking-wider">
                   PRODUCER
                 </h3>
-                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-black leading-tight tracking-wider">
+                <h1 className="text-4xl md:text-5xl lg:text-6xl font-automate font-bold text-black leading-tight tracking-wider">
                   Turn waste into opportunity
                 </h1>
                 <p className="text-xl text-black leading-relaxed tracking-wide">
@@ -79,7 +81,7 @@ export default function Producer() {
           <div className="flex flex-col min-[1261px]:flex-row justify-center items-center gap-8 lg:gap-16">
             {/* Left Content */}
             <div className="flex flex-col items-start gap-6 max-w-lg">
-              <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-black leading-tight tracking-wider">
+              <h2 className="text-xl md:text-2xl lg:text-3xl font-automate font-bold text-black leading-tight tracking-wider">
                 How WasteX benefits you
               </h2>
 
@@ -185,7 +187,7 @@ export default function Producer() {
                 Join WasteX today and make waste work for you!
               </p>
 
-              <button className="bg-wastex-primary text-wastex-text px-6 py-3 rounded-full text-xl font-bold tracking-wider hover:bg-wastex-primary/90 transition-colors max-[580px]:w-full mx-auto min-[1261px]:mx-0">
+              <button className="bg-wastex-primary text-wastex-text px-6 py-3 rounded-full text-xl font-automate font-normal tracking-wider hover:bg-wastex-primary/90 transition-colors max-[580px]:w-full mx-auto min-[1261px]:mx-0">
                 Get started
               </button>
             </div>
@@ -224,7 +226,7 @@ export default function Producer() {
                 <h3 className="text-wastex-secondary text-2xl font-bold uppercase tracking-wider">
                   RECYCLER
                 </h3>
-                <h2 className="text-black text-2xl md:text-3xl lg:text-4xl font-bold leading-tight tracking-wider">
+                <h2 className="text-black text-2xl md:text-3xl lg:text-4xl font-automate font-bold leading-tight tracking-wider">
                   Find quality waste materials for reuse
                 </h2>
               </div>
@@ -236,9 +238,9 @@ export default function Producer() {
                 circular economy.
               </p>
 
-              <button className="bg-wastex-secondary text-white px-6 py-3 rounded-full text-xl font-bold tracking-wider hover:bg-wastex-secondary/90 transition-colors max-[580px]:w-full mx-auto min-[1261px]:mx-0">
+              <Link to="/buyer" className="bg-wastex-secondary text-white px-6 py-3 rounded-full text-xl font-automate font-normal tracking-wider hover:bg-wastex-secondary/90 transition-colors max-[580px]:w-full mx-auto min-[1261px]:mx-0 text-center">
                 Learn more
-              </button>
+              </Link>
             </div>
           </div>
         </section>

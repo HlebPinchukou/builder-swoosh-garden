@@ -1,8 +1,28 @@
 import { Link } from "react-router-dom";
 import FaqAccordion from "@/components/FaqAccordion";
 import WasteItemsCarousel from "@/components/WasteItemsCarousel";
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
 export default function Index() {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash === '#how-it-works') {
+      const el = document.getElementById('how-it-works');
+      if (el) {
+        const headerOffset = 80; // height of the navbar
+        const elementPosition = el.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+      
+        window.scrollTo({
+             top: offsetPosition,
+             behavior: "smooth"
+        });
+      }
+    }
+  }, [location]);
+
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
@@ -26,13 +46,13 @@ export default function Index() {
                 Trinidad & Tobago waste Removal and Disposal
               </p>
             </div>
-            <h1 className="text-wastex-hero-text text-lg min-[951px]:text-3xl min-[1101px]:text-5xl min-[1351px]:text-7xl font-bold leading-tight tracking-wider">
+            <h1 className="text-wastex-hero-text text-lg min-[951px]:text-3xl min-[1101px]:text-5xl min-[1351px]:text-7xl font-automate font-bold leading-tight tracking-wider">
               Connecting waste producers and buyers.
             </h1>
             <p className="text-wastex-hero-text text-sm min-[951px]:text-xl min-[1101px]:text-2xl min-[1351px]:text-3xl font-medium tracking-wider">
               Join WasteX for FREE—your first job is on us!
             </p>
-            <button className="bg-wastex-primary text-wastex-text px-8 py-4 rounded-full text-xs min-[951px]:text-lg min-[1101px]:text-xl min-[1351px]:text-2xl font-bold tracking-wider">
+            <button className="bg-wastex-primary text-wastex-text px-8 py-4 rounded-full text-xs min-[951px]:text-lg min-[1101px]:text-xl min-[1351px]:text-2xl font-automate font-normal tracking-wider">
               Get started
             </button>
           </div>
@@ -52,13 +72,13 @@ export default function Index() {
                 TRINIDAD & TOBAGO
               </span>
             </div>
-            <h1 className="text-4xl min-[490px]:text-6xl font-bold text-white leading-tight">
+            <h1 className="hero-title-mobile font-automate font-bold text-white leading-tight text-4xl min-[490px]:text-6xl">
               Connecting waste producers and buyers.
             </h1>
             <p className="text-lg min-[490px]:text-2xl text-white">
               Join WasteX for <span className="font-bold">FREE</span>—your first job is on us!
             </p>
-            <button className="bg-wastex-primary text-black px-6 min-[490px]:px-8 py-3 min-[490px]:py-4 rounded-full text-lg min-[490px]:text-xl font-bold tracking-wider mt-2 self-start">
+            <button className="bg-wastex-primary text-black px-6 min-[490px]:px-8 py-3 min-[490px]:py-4 rounded-full text-lg min-[490px]:text-xl font-automate font-normal tracking-wider mt-2 self-start">
               Get started
             </button>
           </div>
@@ -69,7 +89,7 @@ export default function Index() {
         <section className="relative">
           {/* Text Content */}
           <div className="flex flex-col justify-center items-center gap-6 max-w-4xl text-center py-16 lg:py-24 px-4 md:px-16 lg:px-20 mx-auto">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-wastex-text leading-tight tracking-wider">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-automate font-bold text-wastex-text leading-tight tracking-wider">
               Welcome to WasteX
             </h2>
             <p className="text-lg md:text-xl lg:text-2xl text-wastex-text leading-relaxed">
@@ -94,11 +114,11 @@ export default function Index() {
         </section>
 
         {/* How it works Section */}
-        <section className="flex flex-col min-[1200px]:flex-row justify-center items-center gap-[32px] py-20 lg:py-24 xl:py-32 px-4 md:px-16 lg:px-12 xl:px-20">
+        <section id="how-it-works" className="flex flex-col min-[1200px]:flex-row justify-center items-center gap-[32px] py-20 lg:py-24 xl:py-32 px-4 md:px-16 lg:px-12 xl:px-20">
           {/* Left Content */}
           <div className="flex flex-col items-center min-[1200px]:items-start text-center min-[1200px]:text-left gap-6 max-w-lg">
             {/* Title */}
-            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-wastex-text leading-tight tracking-wider">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-automate font-bold text-wastex-text leading-tight tracking-wider">
               How it works?
             </h2>
 
@@ -191,13 +211,13 @@ export default function Index() {
             </p>
 
             {/* Buttons */}
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 w-full">
-              <button className="bg-wastex-primary text-wastex-text px-8 py-3 rounded-full text-lg font-bold w-full sm:w-auto hover:bg-wastex-primary/90 transition-colors">
+            <div className="flex flex-col sm:flex-row items-center justify-center min-[1200px]:justify-start gap-4 w-full">
+              <Link to="/producer" className="bg-wastex-primary text-wastex-text px-8 py-3 rounded-full text-lg font-automate font-normal w-full sm:w-auto hover:bg-wastex-primary/90 transition-colors">
                 See producer
-              </button>
+              </Link>
               <Link
                 to="/buyer"
-                className="px-6 py-3 bg-wastex-secondary text-white font-bold text-lg rounded-full hover:bg-wastex-secondary/90 transition-colors tracking-wider w-full sm:w-auto text-center"
+                className="px-6 py-3 bg-wastex-secondary text-white font-automate font-normal text-lg rounded-full hover:bg-wastex-secondary/90 transition-colors tracking-wider w-full sm:w-auto text-center"
               >
                 See buyer
               </Link>
@@ -221,6 +241,11 @@ export default function Index() {
 
         {/* Dashboard Section */}
         <section className="relative py-20 lg:py-32 bg-white">
+          <img
+            src="/images/image-34.png"
+            alt="Decorative element"
+            className="absolute top-60 right-0 h-40 w-auto hidden min-[1101px]:block"
+          />
           <div className="container mx-auto px-4 md:px-16 lg:px-20">
             {/* Top - Image and Text */}
             <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-12 mb-12">
@@ -238,7 +263,7 @@ export default function Index() {
 
               {/* Right - Text Content */}
               <div className="flex flex-col items-start gap-6 max-w-xl">
-                <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-wastex-text leading-tight tracking-wider">
+                <h2 className="text-2xl md:text-3xl lg:text-4xl font-automate font-bold text-wastex-text leading-tight tracking-wider">
                   Your dashboard:
                   <br />
                   Stay organized, anytime, anywhere

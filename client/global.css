@@ -1,3 +1,5 @@
+@import "../MyWebfontsKit/MyWebfontsKit.css";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -108,5 +110,17 @@
 
   body {
     @apply bg-background text-foreground;
+    overflow-x: hidden;
   }
+
+  /* More specific selector for the body to ensure overflow-x is applied */
+  html, body {
+   overflow-x: hidden;
+ }
+
+ @media (max-width: 366px) {
+  .hero-title-mobile {
+    font-size: 1.75rem !important;
+  }
+ }
 }

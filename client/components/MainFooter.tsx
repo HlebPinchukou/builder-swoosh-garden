@@ -48,11 +48,11 @@ const MainFooter = () => {
         {/* Company Links */}
         <div className="flex flex-col items-center min-[1431px]:items-start gap-4 text-center min-[1431px]:text-left">
           <h4 className="text-lg sm:text-xl font-bold tracking-wider">Company</h4>
-          <div className="flex flex-col gap-3 text-base sm:text-lg font-light">
-            <Link to="/" className="hover:text-gray-300 transition-colors">How it works</Link>
+          <div className="flex flex-col gap-3 text-sm sm:text-base font-light">
+            <Link to="/#how-it-works" className="hover:text-gray-300 transition-colors">How it works</Link>
             <Link to="/about" className="hover:text-gray-300 transition-colors">About us</Link>
-            <Link to="/" className="hover:text-gray-300 transition-colors">Privacy policy</Link>
-            <Link to="/" className="hover:text-gray-300 transition-colors">Terms of service</Link>
+            <Link to="/privacy-policy" className="hover:text-gray-300 transition-colors">Privacy policy</Link>
+            <Link to="/terms-of-service" className="hover:text-gray-300 transition-colors">Terms of service</Link>
           </div>
         </div>
 
@@ -61,9 +61,9 @@ const MainFooter = () => {
           <h4 className="text-lg sm:text-xl font-bold tracking-wider">
             Information
           </h4>
-          <div className="flex flex-col gap-3 text-base sm:text-lg font-light">
+          <div className="flex flex-col gap-3 text-sm sm:text-base font-light">
             <Link to="/faq" className="hover:text-gray-300 transition-colors">FAQ</Link>
-            <Link to="/" className="hover:text-gray-300 transition-colors">Contact us</Link>
+            <Link to="/about#contact-us" className="hover:text-gray-300 transition-colors">Contact us</Link>
           </div>
         </div>
 
