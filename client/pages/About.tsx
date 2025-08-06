@@ -187,7 +187,7 @@ export default function About() {
               <p className="text-3xl text-black font-medium leading-snug max-w-4xl">
                 Join WasteX for <span className="font-bold">FREE</span> and enjoy your first job on us! Simplify your waste management today!
               </p>
-              <button className="mt-8 bg-wastex-secondary text-white px-8 py-4 rounded-full text-xl font-automate font-normal tracking-wider hover:opacity-90 transition-opacity w-fit">
+              <button className="mt-8 bg-wastex-secondary text-white px-8 py-4 rounded-full text-xl font-automate font-normal tracking-wider hover:opacity-90 transition-opacity w-full">
                 Get started
               </button>
             </div>
