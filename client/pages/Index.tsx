@@ -249,20 +249,8 @@ export default function Index() {
           <div className="container mx-auto px-4 md:px-16 lg:px-20">
             {/* Top - Image and Text */}
             <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-12 mb-12">
-              {/* Left - Image with decorative elements */}
-              <div className="relative flex-shrink-0">
-                {/* Main dashboard image */}
-                <div className="relative">
-                  <img
-                    src="/images/image-7.png"
-                    alt="WasteX Dashboard Interface"
-                    className="w-full max-w-2xl h-auto"
-                  />
-                </div>
-              </div>
-
               {/* Right - Text Content */}
-              <div className="flex flex-col items-start gap-6 max-w-xl">
+              <div className="flex flex-col items-start gap-6 max-w-xl lg:order-2">
                 <h2 className="text-2xl md:text-3xl lg:text-4xl font-automate font-bold text-wastex-text leading-tight tracking-wider">
                   Your dashboard:
                   <br />
@@ -274,6 +262,17 @@ export default function Index() {
                   over your completed jobs, all from the convenience of your
                   mobile or web device.
                 </p>
+              </div>
+              {/* Left - Image with decorative elements */}
+              <div className="relative flex-shrink-0 lg:order-1">
+                {/* Main dashboard image */}
+                <div className="relative">
+                  <img
+                    src="/images/image-7.png"
+                    alt="WasteX Dashboard Interface"
+                    className="w-full max-w-2xl h-auto"
+                  />
+                </div>
               </div>
             </div>
 

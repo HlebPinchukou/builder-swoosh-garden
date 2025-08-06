@@ -28,15 +28,15 @@ export default function About() {
         >
           <div className="flex flex-col lg:flex-row items-center justify-center gap-12 lg:gap-16 w-full">
             {/* Left Content */}
-            <div className="flex flex-col items-start gap-8 max-w-3xl text-center lg:text-left">
+            <div className="flex flex-col items-start gap-8 max-w-3xl text-left">
               <div className="flex flex-col gap-4 w-full">
                 <h3 className="text-wastex-secondary text-2xl font-bold uppercase tracking-wider">
                   ABOUT US
                 </h3>
-                <h1 className="text-4xl md:text-5xl lg:text-6xl font-automate font-bold text-black leading-tight tracking-wider w-full">
+                <h1 className="text-4xl md:text-5xl lg:text-6xl font-automate font-bold text-black leading-tight tracking-wider w-full text-left">
                   Connecting waste for a sustainable future.
                 </h1>
-                <p className="text-xl text-black leading-relaxed tracking-wide">
+                <p className="text-xl text-black leading-relaxed tracking-wide text-left">
                   Lorem iposum
                 </p>
               </div>
@@ -58,7 +58,7 @@ export default function About() {
         {/* Mission Statement Section */}
         <section className="bg-white py-20 px-4 md:px-16 lg:px-20">
           <div className="max-w-4xl mx-auto text-left space-y-6">
-            <p className="text-lg text-gray-700 leading-relaxed">
+            <p className="text-2xl text-gray-700 leading-relaxed">
               At WasteX, we believe that waste is not just a problem—it's an opportunity. Our
               mission is to create a more sustainable world by simplifying waste management
               through innovative technology and collaborative solutions.
@@ -183,7 +183,7 @@ export default function About() {
         <div className="min-[601px]:hidden">
           <section style={{ backgroundColor: "#A4D0B4" }} className="w-full overflow-hidden">
             <img src="/images/image-32.png" alt="Join WasteX" className="w-full h-auto" />
-            <div className="flex flex-col justify-center items-center text-center flex-1 px-8 py-10 h-full">
+            <div className="flex flex-col justify-center items-start text-left flex-1 px-8 py-10 h-full">
               <p className="text-3xl text-black font-medium leading-snug max-w-4xl">
                 Join WasteX for <span className="font-bold">FREE</span> and enjoy your first job on us! Simplify your waste management today!
               </p>

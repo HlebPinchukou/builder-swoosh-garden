@@ -5,19 +5,19 @@ export default function Buyer() {
     <div className="min-h-screen">
       {/* Hero Section */}
       <section
-          className="py-16 px-4 md:px-16 lg:px-20 bg-gray-100 flex items-center justify-center min-h-[539px]"
+          className="hero-section py-16 px-4 md:px-16 lg:px-20 bg-gray-100 flex items-start min-[1261px]:items-center justify-start min-[1261px]:justify-center min-h-[539px]"
         >
-          <div className="flex flex-col min-[1261px]:flex-row items-center gap-12 lg:gap-16 max-w-7xl">
+          <div className="flex flex-col min-[1261px]:flex-row items-start min-[1261px]:items-center gap-12 lg:gap-16 w-full min-[1261px]:max-w-7xl min-[1261px]:mx-auto justify-start">
             {/* Left Content */}
-            <div className="flex flex-col items-start gap-8 max-w-2xl text-center min-[1261px]:text-left">
-              <div className="flex flex-col gap-4 w-full">
-                <h3 className="text-wastex-secondary text-2xl font-bold uppercase tracking-wider">
+            <div className="flex flex-col items-start gap-8 max-w-2xl text-left w-full">
+              <div className="flex flex-col gap-4 w-full text-left">
+                <h3 className="text-wastex-secondary text-2xl font-bold uppercase tracking-wider text-left !text-left">
                   BUYER
                 </h3>
-                <h1 className="text-4xl md:text-5xl lg:text-6xl font-automate font-bold text-black leading-tight tracking-wider">
+                <h1 className="text-4xl md:text-5xl lg:text-6xl font-automate font-bold text-black leading-tight tracking-wider text-left !text-left">
                   Find valuable materials
                 </h1>
-                <p className="text-xl text-black leading-relaxed tracking-wide">
+                <p className="text-xl text-black leading-relaxed tracking-wide text-left !text-left">
                   Buyers turn waste into value by recycling or repurposing materials.
                   WasteX connects them with Producers, and they handle the trucks
                   and drivers for pickup!
@@ -40,7 +40,7 @@ export default function Buyer() {
 
         {/* Waste into Value Section */}
         <section
-          className="relative bg-wastex-dark-bg overflow-hidden py-16 px-4 md:px-16 lg:px-36 min-h-[372px] flex items-center"
+          className="relative bg-wastex-dark-bg overflow-hidden py-16 px-4 md:px-16 lg:px-36 min-h-[372px] flex items-start min-[1261px]:items-center"
         >
           {/* Background Image */}
           <img
@@ -50,18 +50,9 @@ export default function Buyer() {
           />
 
           {/* Content */}
-          <div className="relative z-10 flex flex-col min-[1261px]:flex-row items-center gap-12 w-full max-w-7xl mx-auto">
-            {/* Left Image */}
-            <div className="flex-shrink-0">
-              <img
-                src="/images/image-24.png"
-                alt="Workers discussing waste management"
-                className="w-full max-w-md rounded-2xl"
-              />
-            </div>
-
+          <div className="relative z-10 flex flex-col min-[1261px]:flex-row items-start min-[1261px]:items-center gap-12 w-full min-[1261px]:max-w-7xl min-[1261px]:mx-auto">
             {/* Right Content */}
-            <div className="flex flex-col items-start gap-6 max-w-lg text-white text-center min-[1261px]:text-left">
+            <div className="flex flex-col items-start gap-6 max-w-lg text-white text-left lg:order-2">
               <h2 className="text-2xl font-semibold uppercase tracking-wider w-full">
                 BUY WASTE
               </h2>
@@ -72,15 +63,23 @@ export default function Buyer() {
                 while supporting a circular economy.
               </p>
             </div>
+            {/* Left Image */}
+            <div className="flex-shrink-0 lg:order-1">
+              <img
+                src="/images/image-24.png"
+                alt="Workers discussing waste management"
+                className="w-full max-w-md rounded-2xl"
+              />
+            </div>
           </div>
         </section>
 
         {/* Benefits Section */}
         <section className="py-20 px-4 md:px-16 lg:px-20">
-          <div className="flex flex-col min-[1261px]:flex-row justify-center items-center gap-8 lg:gap-16">
+          <div className="flex flex-col min-[1261px]:flex-row justify-start min-[1261px]:justify-center items-start min-[1261px]:items-center gap-8 lg:gap-16">
             {/* Left Content */}
-            <div className="flex flex-col items-start gap-6 max-w-lg">
-              <h2 className="text-xl md:text-2xl lg:text-3xl font-automate font-bold text-black leading-tight tracking-wider">
+            <div className="flex flex-col items-start gap-6 max-w-lg lg:order-1">
+              <h2 className="text-xl md:text-2xl lg:text-3xl font-automate font-bold text-black leading-tight tracking-wider text-left">
                 How WasteX benefits you
               </h2>
 
@@ -192,7 +191,7 @@ export default function Buyer() {
             </div>
 
             {/* Right Image */}
-            <div className="relative flex-shrink-0">
+            <div className="relative flex-shrink-0 lg:order-2">
               <img
                 src="/images/image-4.png"
                 alt="WasteX benefits dashboard"
@@ -204,25 +203,14 @@ export default function Buyer() {
 
         {/* Recycler Section */}
         <section
-          className="py-20 px-4 md:px-16 lg:px-36 flex justify-center"
+          className="py-20 px-4 md:px-16 lg:px-36 flex justify-start min-[1261px]:justify-center"
           style={{ backgroundColor: "rgba(194, 198, 196, 0.20)" }}
         >
-          <div className="flex flex-col min-[1261px]:flex-row items-center gap-12 max-w-7xl">
-            {/* Left Image */}
-            <div className="relative flex-shrink-0">
-              {/* Green decorative square in upper left corner */}
-              <div className="absolute -left-8 -top-8 w-26 h-26 bg-wastex-icon-bg rounded-2xl hidden lg:block"></div>
-              <img
-                src="/images/image-25.png"
-                alt="Producer worker"
-                className="w-full max-w-lg h-auto rounded-2xl relative z-10"
-              />
-            </div>
-
+          <div className="flex flex-col min-[1261px]:flex-row items-start min-[1261px]:items-center gap-12 max-w-7xl">
             {/* Right Content */}
-            <div className="flex flex-col items-start gap-6 max-w-3xl text-center min-[1261px]:text-left">
+            <div className="flex flex-col items-start gap-6 max-w-3xl text-left lg:order-2">
               <div className="flex flex-col gap-2 w-full">
-                <h3 className="text-wastex-secondary text-2xl font-bold uppercase tracking-wider">
+                <h3 className="text-wastex-secondary text-2xl font-bold uppercase tracking-wider text-left">
                   PRODUCER
                 </h3>
                 <h2 className="text-black text-2xl md:text-3xl lg:text-4xl font-automate font-bold leading-tight tracking-wider">
@@ -240,6 +228,16 @@ export default function Buyer() {
               <Link to="/producer" className="bg-wastex-secondary text-white px-6 py-3 rounded-full text-xl font-automate font-normal tracking-wider hover:bg-wastex-secondary/90 transition-colors max-[580px]:w-full mx-auto min-[1261px]:mx-0 text-center">
                 Learn more
               </Link>
+            </div>
+            {/* Left Image */}
+            <div className="relative flex-shrink-0 lg:order-1">
+              {/* Green decorative square in upper left corner */}
+              <div className="absolute -left-8 -top-8 w-26 h-26 bg-wastex-icon-bg rounded-2xl hidden lg:block"></div>
+              <img
+                src="/images/image-25.png"
+                alt="Producer worker"
+                className="w-full max-w-lg h-auto rounded-2xl relative z-10"
+              />
             </div>
           </div>
         </section>

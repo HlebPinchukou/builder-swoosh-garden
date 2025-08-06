@@ -123,4 +123,14 @@
     font-size: 1.75rem !important;
   }
  }
+
+ /* Force left alignment on mobile for hero sections */
+ @media (max-width: 1260px) {
+  .hero-section h1,
+  .hero-section h2,
+  .hero-section h3,
+  .hero-section p {
+    text-align: left !important;
+  }
+ }
 }
