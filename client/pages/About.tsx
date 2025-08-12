@@ -37,7 +37,7 @@ export default function About() {
                   Connecting waste for a sustainable future.
                 </h1>
                 <p className="text-xl text-black leading-relaxed tracking-wide text-left">
-                  Lorem iposum
+                  WasteXchange – turning Trinidad & Tobago’s waste into circular opportunity, one exchange at a time.
                 </p>
               </div>
             </div>
