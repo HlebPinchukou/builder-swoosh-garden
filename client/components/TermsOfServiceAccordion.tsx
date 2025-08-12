@@ -32,10 +32,10 @@ const TermsOfServiceAccordion = () => {
             <AccordionContent className="text-base text-gray-700 space-y-2">
               <ul className="list-disc pl-6 space-y-1">
                 <li>
-                  % Landfilled: from >90% of industrial byproducts to 50% within 3 years.
+                  % Landfilled: from 90% of industrial byproducts to 50% within 3 years.
                 </li>
                 <li>Active stakeholders: grow to 200+ in year 1.</li>
-                <li>Waste lubricating oil: >80% recycled to base oil.</li>
+                <li>Waste lubricating oil: 80% recycled to base oil.</li>
                 <li>Market value: unlock US$10M+ annual secondary trade.</li>
                 <li>GHG: quantified, verifiable emission savings.</li>
                 <li>Circular jobs: dozens in year 1; hundreds by 2027.</li>
