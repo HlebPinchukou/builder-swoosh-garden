@@ -1,5 +1,7 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 export default function About() {
   const location = useLocation();
@@ -54,7 +56,7 @@ export default function About() {
             </p>
           </div>
           <div className="relative flex-shrink-0">
-            <img src="/images/image-26.png" alt="Waste exchange platform" className="w-full h-auto rounded-2xl" />
+            <img src="/images/image-1.png" alt="Waste exchange platform" className="w-full h-auto rounded-2xl" />
           </div>
         </div>
       </section>
@@ -105,7 +107,7 @@ export default function About() {
       <section className="bg-white py-16 px-4 md:px-16 lg:px-20">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="relative flex-shrink-0 order-2 lg:order-1">
-            <img src="/images/image-27.png" alt="Industrial partnership" className="w-full h-auto rounded-2xl" />
+            <img src="/images/image-3.png" alt="Industrial partnership" className="w-full h-auto rounded-2xl" />
           </div>
           <div className="space-y-6 order-1 lg:order-2">
             <h3 className="text-wastex-secondary text-2xl font-bold uppercase tracking-wider">Trailblazing with TOSL Engineering</h3>
@@ -208,7 +210,7 @@ export default function About() {
             </ul>
           </div>
           <div className="relative flex-shrink-0">
-            <img src="/images/image-33.png" alt="Community and collaboration" className="w-full h-auto rounded-2xl" />
+            <img src="/images/image-22.png" alt="Community and collaboration" className="w-full h-auto rounded-2xl" />
           </div>
         </div>
       </section>
@@ -312,19 +314,135 @@ export default function About() {
         </div>
       </section>
 
-      {/* Conclusion */}
-      <section className="bg-white py-16 px-4 md:px-16 lg:px-20">
-        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div className="space-y-6">
-            <h3 className="text-wastex-secondary text-2xl font-bold uppercase tracking-wider">Conclusion</h3>
-            <p className="text-lg text-gray-700 leading-relaxed">
-              The future isn’t linear—it’s circular, brilliant, and bold. At WasteXchange, we’re proving that with vision, technology, and hands-on action, Trinidad &amp; Tobago can lead the region and inspire the world in closing the waste loop, building jobs, and protecting our shores and cities for generations.
-            </p>
-            <p className="text-lg text-gray-700 leading-relaxed">Let’s exchange. Let’s grow. Let’s turn waste into wealth and climate hope together.</p>
-          </div>
-          <div className="relative flex-shrink-0">
-            <img src="/images/image-32.png" alt="Join WasteX" className="w-full h-auto rounded-2xl" />
-          </div>
+      {/* Compact About (accordions + cards) inserted before Contact Us */}
+      <section className="py-12 px-4 md:px-16 lg:px-20" style={{ backgroundColor: "rgba(194, 198, 196, 0.20)" }}>
+        <div className="max-w-6xl mx-auto text-left">
+          <h2 className="text-3xl md:text-4xl font-automate font-bold text-black mb-6">About WasteXchange</h2>
+          <Accordion type="multiple" className="w-full">
+            <AccordionItem value="vision">
+              <AccordionTrigger className="text-left">Our Vision: Fueling a Waste-Free, Circular region</AccordionTrigger>
+              <AccordionContent className="text-base text-gray-700 space-y-3">
+                <p>At WasteXchange (WasteX), we believe in a world where “waste” is simply a resource waiting for a new life.</p>
+                <p>We’re driving industrial transformation by connecting waste generators with innovators who can turn yesterday’s leftovers into tomorrow’s raw materials.</p>
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="what-is">
+              <AccordionTrigger className="text-left">What Is WasteXchange? Rethinking Waste, Unlocking Value</AccordionTrigger>
+              <AccordionContent className="text-base text-gray-700 space-y-3">
+                <p>Trinidad &amp; Tobago’s first digital waste exchange platform—connecting businesses, manufacturers, recyclers, and entrepreneurs.</p>
+                <p>Trade, repurpose, and monetize surplus materials that would otherwise be liabilities. WasteX bridges those who have unwanted byproducts with those who can use them.</p>
+                <img src="/images/image-3.png" alt="Marketplace" className="w-full h-auto rounded-2xl" />
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="why">
+              <AccordionTrigger className="text-left">Why We Exist: Our Purpose and Ambition</AccordionTrigger>
+              <AccordionContent className="text-base text-gray-700 space-y-3">
+                <p>Our region faces rising landfill volumes, fragmented recycling ecosystems, and linear “take‑make‑throw” models.</p>
+                <ul className="list-disc pl-6 space-y-1">
+                  <li>Ignite a circular revolution in T&amp;T and the Caribbean.</li>
+                  <li>Prove every “waste” can spark opportunity and renewal.</li>
+                  <li>Unite the ecosystem on one digital platform.</li>
+                </ul>
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="idb">
+              <AccordionTrigger className="text-left">Proudly Backed by the IADB (TT-G1008)</AccordionTrigger>
+              <AccordionContent className="text-base text-gray-700 space-y-3">
+                <p>Supported under IDB/GEF to ignite the circular economy in T&amp;T. Demonstrates the viability of circular solutions in small island states.</p>
+                <ul className="list-disc pl-6 space-y-1">
+                  <li>Global expertise in circular models and digital transformation</li>
+                  <li>Connections to regional policy and innovation initiatives</li>
+                </ul>
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="tosl">
+              <AccordionTrigger className="text-left">Trailblazing with TOSL Engineering</AccordionTrigger>
+              <AccordionContent className="text-base text-gray-700 space-y-3">
+                <ul className="list-disc pl-6 space-y-1">
+                  <li>Advanced recycling facility for waste lubricating oils → base oils</li>
+                  <li>Digital‑physical connectivity: analytics, quality checks, traceability</li>
+                  <li>End‑to‑end service: sampling, logistics, storage, processing</li>
+                </ul>
+                <img src="/images/image-22.png" alt="TOSL partnership" className="w-full h-auto rounded-2xl" />
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="how">
+              <AccordionTrigger className="text-left">How WasteXchange Works</AccordionTrigger>
+              <AccordionContent className="text-base text-gray-700 space-y-2">
+                <ul className="list-disc pl-6 space-y-1">
+                  <li>Digital Listings: type, quantity, location, outcomes</li>
+                  <li>Smart Matching: filters for production and R&amp;D</li>
+                  <li>Quality Assurance and Logistics Coordination</li>
+                  <li>Transparent Transactions and Impact Dashboards</li>
+                </ul>
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="impact">
+              <AccordionTrigger className="text-left">Our Impact</AccordionTrigger>
+              <AccordionContent>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <Card>
+                    <CardHeader><CardTitle className="text-xl">Landfill Reduction</CardTitle></CardHeader>
+                    <CardContent className="text-gray-700">Turn waste into tradable resources, cut pollution, extend landfill life.</CardContent>
+                  </Card>
+                  <Card>
+                    <CardHeader><CardTitle className="text-xl">Resource Efficiency</CardTitle></CardHeader>
+                    <CardContent className="text-gray-700">Less virgin extraction, lower imports, reduced footprint.</CardContent>
+                  </Card>
+                  <Card>
+                    <CardHeader><CardTitle className="text-xl">Green Industry Growth</CardTitle></CardHeader>
+                    <CardContent className="text-gray-700">New value chains, startups, and jobs in the circular economy.</CardContent>
+                  </Card>
+                  <Card>
+                    <CardHeader><CardTitle className="text-xl">Climate Action</CardTitle></CardHeader>
+                    <CardContent className="text-gray-700">Lower GHG emissions, cleaner waterways, SDGs progress.</CardContent>
+                  </Card>
+                </div>
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="numbers">
+              <AccordionTrigger className="text-left">WasteXchange by the Numbers (Sample)</AccordionTrigger>
+              <AccordionContent className="text-base text-gray-700 space-y-2">
+                <ul className="list-disc pl-6 space-y-1">
+                  <li>% Landfilled: &gt;90% → &lt;50% targeted in 3 years</li>
+                  <li>Stakeholders: &lt;50 → 200+ projected in year 1</li>
+                  <li>Waste oils: &gt;80% recycled to base oil</li>
+                  <li>Market value: US$10M+ annual secondary trade</li>
+                </ul>
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="voice">
+              <AccordionTrigger className="text-left">How We Communicate</AccordionTrigger>
+              <AccordionContent className="text-base text-gray-700 space-y-2">
+                <ul className="list-disc pl-6 space-y-1">
+                  <li>Punchy: “Don’t landfill it. List it, trade it, and profit from it!”</li>
+                  <li>Optimistic: “Trinidad &amp; Tobago: Where waste becomes new wealth.”</li>
+                  <li>Pragmatic: real businesses, evidence, and guidance.</li>
+                </ul>
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="global">
+              <AccordionTrigger className="text-left">Inspiration from Circular Startups</AccordionTrigger>
+              <AccordionContent className="text-base text-gray-700 space-y-2">
+                <ul className="list-disc pl-6 space-y-1">
+                  <li>Digital marketplaces connect supply to demand.</li>
+                  <li>Quality &amp; traceability via data and emerging tech.</li>
+                  <li>Community engagement and continuous innovation.</li>
+                </ul>
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="cta">
+              <AccordionTrigger className="text-left">Join the Circular Movement</AccordionTrigger>
+              <AccordionContent className="text-base text-gray-700 space-y-2">
+                <ul className="list-disc pl-6 space-y-1">
+                  <li>List, connect, and create value with WasteXchange.</li>
+                  <li>Launch circular startups with sustainable sourcing.</li>
+                  <li>Partner on policy, standards, and incentives.</li>
+                  <li>Invest in scalable, climate-smart solutions.</li>
+                </ul>
+              </AccordionContent>
+            </AccordionItem>
+          </Accordion>
         </div>
       </section>
       {/* Hero Section */}
@@ -352,7 +470,7 @@ export default function About() {
               {/* Purple decorative square */}
               <div className="absolute -left-8 -top-8 w-26 h-26 bg-purple-300 rounded-2xl"></div>
               <img
-                src="/images/image-26.png"
+                src="/images/image-1.png"
                 alt="Waste management professionals"
                 className="w-full max-w-2xl h-auto rounded-2xl relative z-10"
               />
@@ -397,7 +515,7 @@ export default function About() {
             {/* Left Image */}
             <div className="relative flex-shrink-0">
               <img
-                src="/images/image-27.png"
+                src="/images/image-24.png"
                 alt="Customer service representative"
                 className="w-full max-w-[900px] h-auto rounded-2xl relative z-10"
               />
