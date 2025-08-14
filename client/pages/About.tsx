@@ -293,8 +293,6 @@ export default function About() {
             <ul className="list-disc pl-6 text-lg text-gray-700 space-y-2">
               <li>TOSL Engineering: leading provider of technical-engineering and circular solutions.</li>
               <li>Inter-American Development Bank (IDB) &amp; GEF: innovation, policy, and investment for circular transitions.</li>
-              <li>Other 1</li>
-              <li>Other 2</li>
             </ul>
           </div>
         </div>
@@ -331,7 +329,6 @@ export default function About() {
               <AccordionContent className="text-base text-gray-700 space-y-3">
                 <p>Trinidad &amp; Tobago’s first digital waste exchange platform—connecting businesses, manufacturers, recyclers, and entrepreneurs.</p>
                 <p>Trade, repurpose, and monetize surplus materials that would otherwise be liabilities. WasteX bridges those who have unwanted byproducts with those who can use them.</p>
-                <img src="/images/image-3.png" alt="Marketplace" className="w-full h-auto rounded-2xl" />
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="why">
@@ -363,7 +360,6 @@ export default function About() {
                   <li>Digital‑physical connectivity: analytics, quality checks, traceability</li>
                   <li>End‑to‑end service: sampling, logistics, storage, processing</li>
                 </ul>
-                <img src="/images/image-22.png" alt="TOSL partnership" className="w-full h-auto rounded-2xl" />
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="how">
