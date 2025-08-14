@@ -470,7 +470,7 @@ export default function About() {
               {/* Purple decorative square */}
               <div className="absolute -left-8 -top-8 w-26 h-26 bg-purple-300 rounded-2xl"></div>
               <img
-                src="/images/image-1.png"
+                src="/images/image-26.png"
                 alt="Waste management professionals"
                 className="w-full max-w-2xl h-auto rounded-2xl relative z-10"
               />
@@ -515,7 +515,7 @@ export default function About() {
             {/* Left Image */}
             <div className="relative flex-shrink-0">
               <img
-                src="/images/image-24.png"
+                src="/images/image-27.png"
                 alt="Customer service representative"
                 className="w-full max-w-[900px] h-auto rounded-2xl relative z-10"
               />
