@@ -11,7 +11,7 @@ export default function About() {
         const headerOffset = 80; // height of the navbar
         const elementPosition = el.getBoundingClientRect().top;
         const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-      
+
         window.scrollTo({
              top: offsetPosition,
              behavior: "smooth"
@@ -19,7 +19,7 @@ export default function About() {
       }
     }
   }, [location]);
-  
+
   return (
     <div className="min-h-screen">
       {/* WasteXchange Extended About Sections (inserted before existing ABOUT US hero) */}
@@ -32,7 +32,7 @@ export default function About() {
             At WasteXchange (WasteX), we believe in a world where “waste” is simply a resource waiting for a new life. Our mission: to transform how Trinidad & Tobago (and the entire Latam region) thinks about waste—spotlighting it not as a problem, but as an opportunity for innovation, climate action, and shared prosperity.
           </p>
           <p className="text-lg text-gray-700 leading-relaxed">
-            We’re driving industrial transformation by connecting waste generators with innovators who can turn yesterday’s leftovers into tomorrow’s raw materials, growing the region’s circular economy one collaboration at a time.
+            We’re driving industrial transformation by connecting waste generators with innovators who can turn yesterday’s leftovers into tomorrow’s raw materials, growing the region’s circular economy one collaboration at a time!
           </p>
         </div>
       </section>
